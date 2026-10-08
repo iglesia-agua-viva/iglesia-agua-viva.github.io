@@ -1,0 +1,485 @@
+{
+  "iglesia": "Agua Viva",
+  "guia_numero": 9,
+  "bloques": [
+    {
+      "orden": 1,
+      "tipo": "sermon",
+      "resena": [
+        "SERMÓN: JOSUÉ CAPÍTULO 7 El Peligro de la Confianza Propia y el Pecado Oculto Texto Principal: Josué capítulo 7 Idea Central: Ninguna victoria pasada garantiza el éxito futuro si caminamos en autosuficiencia y permitimos el pecado no confesado en nuestras vidas.",
+        "Introducción Venimos de uno de los momentos más gloriosos de la historia del pueblo de Dios. Israel acababa de presenciar cómo las murallas de Jericó se derrumbaban milagrosamente. Habían visto la mano poderosa de Dios pelear por ellos, abriendo el Río Jordán y dándoles una victoria contundente.",
+        "Sin embargo, inmediatamente después de la gran victoria de Jericó, Israel experimenta un golpe devastador e inesperado en un pequeño poblado llamado Hai. Esta historia no está en las Escrituras para desanimarnos, sino como un mapa de advertencia para nuestra vida espiritual.",
+        "Parte I: ¿Cómo Sucedió la Derrota? (El Proceso de la Caída) La derrota ante los hombres de Hai no ocurrió de la noche a la mañana; fue el resultado de dos trampas en las que cayeron los israelitas:",
+        "1. Confianza excesiva en sus propias fuerzas Tras la gran victoria en Jericó, los espías regresaron con un reporte cargado de autosuficiencia y menosprecio hacia el enemigo:",
+        "“No suba todo el pueblo, sino suban como dos mil o tres mil hombres, y tomarán a Hai; no fatigues a todo el pueblo yendo allí, porque ellos son pocos.” (Josué 7:3)",
+        "* El menosprecio al enemigo: Israel vio a Hai como una ciudad pequeña e insignificante. Olvidaron que no ganaron en Jericó por sus propias estrategias militares ni por el número de sus soldados, sino porque Dios peleó por ellos.",
+        "* El descuido de la oración: A diferencia de la batalla de Jericó, donde buscaron la dirección de Dios para cada paso, en esta ocasión no consultaron al Señor. Se confiaron de su experiencia previa y asumieron que la victoria estaba garantizada.",
+        "2. La batalla y la humillación Confiados en su lógica humana, subieron aproximadamente tres mil hombres a atacar a Hai. El resultado fue trágico:",
+        "* Los hombres de Hai salieron a su encuentro y los hicieron huir.",
+        "* Mataron a 36 soldados israelitas y los persiguieron hasta las canteras.",
+        "* El impacto espiritual y emocional fue demoledor: «el corazón del pueblo se desmayó y vino a ser como agua» (Josué 7:5). El pueblo que marchaba invencible ahora estaba lleno de temor y confusión.",
+        "Parte II: ¿Por qué Sucedió la Derrota? (La Causa Real) Cuando Josué, lleno de dolor, rasgó sus vestidos y se posó rostro en tierra delante del arca de Jehová preguntando por qué había sucedido esto, la respuesta del Señor fue contundente:",
+        "“Israel ha pecado, y aun han quebrantado mi pacto que yo les mandé; y también han tomado del anatema, y hasta han hurtado, han mentido, y aun lo han guardado entre sus enseres.” (Josué 7:11)",
+        "La derrota en el campo de batalla fue solo la manifestación visible de un problema espiritual oculto: el pecado de Acán.",
+        "1. El pecado oculto de Acán En el capítulo anterior (Josué 6:18-19), Dios había dado una orden clara respecto a Jericó: toda la ciudad estaba bajo anatema (consagrada a la destrucción), y el oro, la plata y los utensilios de bronce y hierro pertenecían al tesoro de Jehová. Nadie debía tomar nada para sí mismo.",
+        "Sin embargo, Acán cedió a la tentación en un proceso que sigue el mismo patrón del pecado hoy en día:",
+        "1. Vio: Contempló un manto babilónico muy fino, doscientos siclos de plata y un lingote de oro.",
+        "2. Codició: Permitió que el deseo material gobernara su corazón sobre el mandato divino.",
+        "3. Tomó: Ejecutó el acto de desobediencia.",
+        "4. Escondió: Enterró el botín en medio de su tienda, pensando que nadie se daría cuenta.",
+        "2. La solidaridad del pueblo y las consecuencias Aun cuando fue solo Acán quien tomó el anatema, Dios no dijo «Acán ha pecado», sino «Israel ha pecado». Esto revela el principio espiritual del cuerpo de Dios: lo que hace un miembro afecta a todo el pueblo. Como declara el apóstol Pablo:",
+        "“De manera que, si un miembro padece, todos los miembros se duelen con él, y si un miembro recibe honra, todos los miembros con él se gozan.” (1 Corintios 12:26)",
+        "En el pueblo de Dios no existe el individualismo absoluto. La desobediencia 'privada' de un miembro trae consecuencias colectivas y debilidad espiritual para toda la congregación.",
+        "* Falta de presencia divina: Dios les advirtió claramente que no estaría más con ellos a menos que destruyeran el anatema de en medio de ellos (Josué 7:12).",
+        "* El juicio sobre Acán y su familia: Tras ser descubierto por diseño divino, Acán tuvo que confesar su pecado. El anatema destruyó no solo la comunión del pueblo con Dios, sino que trajo la ruina total sobre Acán, su familia y sus posesiones en el valle de Acor.",
+        "Aplicación Práctica para Nuestras Vidas",
+        "1. Cuidado con la autosuficiencia tras la victoria: Los momentos más peligrosos en la vida cristiana a menudo no son las grandes crisis, sino los días posteriores a las grandes victorias. No te confíes de tu experiencia ni de tus fuerzas; sigue buscando al Señor en oración todos los días.",
+        "2. Nunca menosprecies la tentación o al enemigo: Ninguna «pequeña Hai» es inofensiva si vamos a pelear sin la presencia de Dios.",
+        "3. El pecado «secreto» no existe para Dios: Lo que enterramos en la tienda de nuestro corazón termina afectando a nuestra familia, nuestra iglesia y nuestra comunión con el Señor.",
+        "4. Restauración a través del arrepentimiento: Dios no dejó a Israel en la derrota; les mostró la TC causa del problema para que pudieran limpiarse, purificarse y levantarse de nuevo a conquistar la tierra prometida."
+      ],
+      "crucigrama": {
+        "tema": "SERMÓN: JOSUÉ CAPÍTULO 7",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "ANATEMA",
+            "clue": "Objeto o persona consagrada a la destrucción total por mandato de Dios"
+          },
+          {
+            "word": "HAI",
+            "clue": "Pequeña fortaleza montañosa donde el pueblo de Israel sufrió una inesperada derrota"
+          },
+          {
+            "word": "JERICO",
+            "clue": "Ciudad amurallada cuyas paredes cayeron milagrosamente ante la fe de Israel"
+          },
+          {
+            "word": "ACAN",
+            "clue": "Hombre de la tribu de Juda que desobedeció a Dios tomando del anatema"
+          },
+          {
+            "word": "SEBARIM",
+            "clue": "Nombre hebreo de las canteras o despeñaderos por donde huyo el ejercito"
+          },
+          {
+            "word": "AUTOSUFIENCIA",
+            "clue": "Confianza excesiva en las propias fuerzas e ingenio prescindiendo de Dios"
+          },
+          {
+            "word": "CODICIA",
+            "clue": "Deseo desordenado de poseer riquezas o bienes ajenos contra la orden divina"
+          },
+          {
+            "word": "ORACION",
+            "clue": "Buscar la dirección y consulta de Dios antes de emprender cualquier batalla"
+          },
+          {
+            "word": "TIENDA",
+            "clue": "Lugar privado y oculto donde Acán enterró el botín robado"
+          },
+          {
+            "word": "SOLICITUD",
+            "clue": "Actitud de cuidado diligente y atento en el servicio"
+          },
+          {
+            "word": "PACTO",
+            "clue": "Compromiso sagrado entre Dios y su pueblo quebrantado por la desobediencia"
+          },
+          {
+            "word": "DESOBEDIENCIA",
+            "clue": "Acto de ignorar o violar las ordenes claras dadas por el Señor"
+          },
+          {
+            "word": "HUMILLACION",
+            "clue": "Condición de quebrantamiento sufrida tras la derrota ante los hombres de Hai"
+          },
+          {
+            "word": "MANTILO",
+            "clue": "Prenda fina de origen babilónico que atrajo la mirada de Acán"
+          },
+          {
+            "word": "SILVER",
+            "clue": "Metal precioso hallado entre los bienes robados en la ciudad"
+          },
+          {
+            "word": "ACOR",
+            "clue": "Valle donde se ejecutó el juicio y castigo sobre el pecador y su familia"
+          },
+          {
+            "word": "SOLIDARIDAD",
+            "clue": "Principio espiritual por el cual la falta de un miembro afecta a todo el cuerpo"
+          },
+          {
+            "word": "CONFESION",
+            "clue": "Declaración abierta del pecado cometido ante Dios y el liderazgo"
+          },
+          {
+            "word": "RESTAURACION",
+            "clue": "Proceso divino para purificar al pueblo y levantarlo de nuevo a la conquista"
+          },
+          {
+            "word": "MENOSPRECIO",
+            "clue": "Subestimar la capacidad del enemigo o la dificultad de una prueba espiritual"
+          }
+        ]
+      },
+      "pastor": "Edwin Navarro",
+      "titulo": "El Peligro de la Confianza Propia y el Pecado Oculto"
+    },
+    {
+      "orden": 2,
+      "tipo": "personaje_biblico",
+      "resena": [
+        "Juan el Bautista ocupa un lugar único en el comienzo del Evangelio. Fue el hijo de Zacarías y Elisabet y nació como respuesta a una promesa de Dios. Desde antes de su nacimiento se anunció que tendría una misión especial: preparar al pueblo para la llegada del Señor. Su ministerio no tendría como finalidad atraer la atención hacia sí mismo, sino preparar el camino para Jesús.",
+        "Juan creció en el desierto y comenzó a predicar en una época de expectativa espiritual. Su mensaje llamaba al pueblo al arrepentimiento porque el reino de los cielos se había acercado. Su manera de vestir y su alimentación recordaban el estilo de los antiguos profetas, pero su misión estaba directamente relacionada con la llegada del Mesías. Mateo lo presenta como aquel de quien había hablado el profeta Isaías: una voz que clama en el desierto y prepara el camino del Señor (Mt 3:1-4; Is 40:3).",
+        "La predicación de Juan era directa. Llamaba a las personas a reconocer su pecado y a demostrar mediante su conducta que realmente se habían arrepentido. Muchos acudían a él y eran bautizados en el río Jordán. Por esta razón llegó a ser conocido como Juan el Bautista. Su bautismo señalaba el arrepentimiento y preparaba al pueblo para recibir al que venía después de él.",
+        "Juan también tuvo que confrontar la falsa seguridad religiosa. A los líderes que confiaban en su descendencia de Abraham les recordó que Dios no dependía de sus privilegios religiosos. El verdadero arrepentimiento debía producir frutos visibles (Mt 3:7-10). De esta manera, su ministerio no consistía simplemente en anunciar acontecimientos futuros, sino en preparar espiritualmente a las personas para encontrarse con el Mesías.",
+        "Cuando Jesús llegó al Jordán, Juan reconoció que su ministerio estaba relacionado con él. Aunque inicialmente quiso impedir que Jesús fuera bautizado, finalmente lo bautizó. Después de aquel momento, el Espíritu de Dios descendió sobre Jesús y una voz desde los cielos declaró que él era el Hijo amado (Mt 3:13-17). Juan había cumplido una parte fundamental de su misión: presentar públicamente a Jesús.",
+        "A partir de entonces, Juan dejó claro que Jesús ocupaba un lugar superior al suyo. Cuando algunos de sus propios discípulos comenzaron a seguir a Jesús, Juan no trató de retenerlos. Por el contrario, señaló hacia él como el Cordero de Dios y permitió que sus discípulos siguieran al Maestro (Jn 1:29-37). Su actitud queda resumida en una de sus declaraciones más conocidas: “Es necesario que él crezca, pero que yo mengüe” (Jn 3:30).",
+        "Juan también denunció públicamente el pecado de Herodes Antipas, quien había tomado a Herodías, la esposa de su hermano. Su fidelidad a la verdad terminó llevándolo a la prisión (Mt 14:3-5). Desde allí, en medio de una situación difícil, Juan envió discípulos a preguntarle a Jesús si él era realmente el que había de venir. Jesús respondió señalando las obras que estaba realizando y confirmó la autenticidad de su misión (Mt 11:2-6).",
+        "Finalmente, Juan fue ejecutado por orden de Herodes durante una celebración. Su muerte mostró hasta dónde podía llegar la oposición contra un hombre que había decidido permanecer fiel a su mensaje (Mt 14:6-12).",
+        "Jesús mismo dio un testimonio extraordinario acerca de Juan. Lo presentó como un profeta y afirmó que entre los nacidos de mujer no se había levantado otro mayor que él (Mt 11:7-11). Sin embargo, Juan comprendió que su grandeza estaba precisamente en cumplir la misión que Dios le había confiado: preparar el camino y señalar al Mesías.",
+        "La vida de Juan el Bautista enseña que un verdadero siervo de Dios no necesita ocupar el centro de la escena. Su propósito es conducir a otros hacia Cristo. Juan anunció su llegada, preparó al pueblo, lo presentó públicamente y finalmente aceptó disminuir para que Jesús fuera reconocido. Su ministerio puede resumirse en una convicción sencilla y profunda: Cristo debe crecer y nosotros debemos aprender a ocupar el lugar que Dios nos ha asignado."
+      ],
+      "crucigrama": {
+        "tema": "JUAN EL BAUTISTA",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "JUAN",
+            "clue": "Nombre que recibió el hijo de Zacarías y Elisabet."
+          },
+          {
+            "word": "BAUTISTA",
+            "clue": "Título por el que fue conocido Juan debido a su ministerio."
+          },
+          {
+            "word": "DESIERTO",
+            "clue": "Lugar donde Juan creció y comenzó su ministerio público."
+          },
+          {
+            "word": "ARREPENTIMIENTO",
+            "clue": "Llamado central de Juan al preparar al pueblo para el Mesías."
+          },
+          {
+            "word": "BAUTISMO",
+            "clue": "Práctica mediante la cual Juan identificaba a quienes respondían a su llamado."
+          },
+          {
+            "word": "JORDAN",
+            "clue": "Río donde Juan bautizaba a quienes acudían a él."
+          },
+          {
+            "word": "PROFETA",
+            "clue": "Persona que proclamaba al pueblo el llamado al arrepentimiento."
+          },
+          {
+            "word": "MESIAS",
+            "clue": "Aquel cuya llegada Juan anunció y para quien preparó al pueblo."
+          },
+          {
+            "word": "CAMINO",
+            "clue": "Imagen utilizada para hablar de la preparación para la llegada del Señor."
+          },
+          {
+            "word": "CORDERO",
+            "clue": "Título con el que Juan señaló públicamente a Jesús."
+          },
+          {
+            "word": "JESUS",
+            "clue": "Aquel a quien Juan presentó como superior a él."
+          },
+          {
+            "word": "DISCIPULOS",
+            "clue": "Seguidores de Juan que posteriormente comenzaron a seguir a Jesús."
+          },
+          {
+            "word": "ESPIRITU",
+            "clue": "Aquel que descendió sobre Jesús después de su bautismo."
+          },
+          {
+            "word": "CLAMOR",
+            "clue": "Expresión con la que se anunciaba en el desierto la llegada del Señor."
+          },
+          {
+            "word": "HERODES",
+            "clue": "Gobernante que encarceló a Juan por denunciar su conducta."
+          },
+          {
+            "word": "HERODIAS",
+            "clue": "Mujer relacionada con el conflicto que llevó al encarcelamiento de Juan."
+          },
+          {
+            "word": "PRISION",
+            "clue": "Lugar donde Juan permaneció encarcelado antes de morir."
+          },
+          {
+            "word": "FIDELIDAD",
+            "clue": "Actitud de Juan al mantenerse firme en el mensaje que Dios le había confiado."
+          },
+          {
+            "word": "ANUNCIO",
+            "clue": "Mensaje con el que Juan señalaba la llegada de Jesús."
+          },
+          {
+            "word": "MENGUAR",
+            "clue": "Lo que Juan afirmó que debía suceder con él para que Jesús creciera."
+          }
+        ]
+      }
+    },
+    {
+      "orden": 3,
+      "tipo": "libro_biblico",
+      "resena": [
+        "La Segunda Carta a los Corintios fue escrita por el apóstol Pablo a una iglesia que él mismo había fundado y con la que mantenía una relación marcada tanto por el afecto como por las dificultades. Corinto era una ciudad importante del mundo grecorromano, caracterizada por su actividad comercial y diversidad cultural. Después de establecer la iglesia, Pablo tuvo que enfrentar conflictos, cuestionamientos sobre su autoridad y situaciones que pusieron a prueba su vínculo con los creyentes. Esta carta refleja una etapa especialmente personal de su ministerio, en la que expresa su preocupación por la condición espiritual de la comunidad y procura restaurar la confianza entre ellos.",
+        "Pablo comienza hablando del consuelo que Dios concede en medio de las aflicciones. Su propia experiencia demuestra que las dificultades no significan el abandono de Dios, sino que pueden convertirse en oportunidades para experimentar su fortaleza y acompañar a otros que atraviesan circunstancias semejantes. El apóstol explica también los motivos de sus decisiones y sus cambios de planes, procurando que los corintios comprendan que su ministerio está guiado por la sinceridad y no por intereses personales.",
+        "Uno de los temas centrales de la carta es la naturaleza del ministerio apostólico. Pablo presenta el nuevo pacto como una obra del Espíritu, que transforma la vida de las personas y les permite reflejar la gloria de Dios. A diferencia de quienes buscan reconocimiento mediante las apariencias, el apóstol destaca que el poder del ministerio no procede de la capacidad humana, sino de Dios. Por eso, aunque los mensajeros del evangelio experimentan debilidad, oposición y sufrimiento, la vida de Jesús se manifiesta a través de su servicio. Esta perspectiva permite comprender la afirmación de Pablo de que el poder de Dios se perfecciona en la debilidad.",
+        "La carta también aborda la reconciliación. Pablo explica que Dios reconcilió consigo al mundo por medio de Cristo y confió a sus siervos el mensaje de la reconciliación. Esta responsabilidad da al ministerio una dimensión que va más allá de la relación entre Pablo y los corintios: anunciar el evangelio significa invitar a las personas a restablecer su relación con Dios. Desde esta perspectiva, el apóstol les exhorta a vivir de manera coherente con la gracia que han recibido.",
+        "Otro asunto importante es la colecta destinada a los creyentes necesitados de Jerusalén. Pablo anima a los corintios a participar con generosidad, no por obligación, sino como una expresión genuina del amor cristiano. La ayuda material se convierte así en una manifestación de unidad entre comunidades de distintas regiones y en una oportunidad para demostrar que el evangelio transforma también la manera de compartir los recursos.",
+        "En la parte final, Pablo responde a quienes cuestionaban su autoridad y menospreciaban su apariencia o sus sufrimientos. En lugar de presumir de sus logros, presenta las dificultades que ha enfrentado por causa del evangelio y señala que su verdadera confianza está en la gracia de Cristo. Su defensa no busca el prestigio personal, sino proteger a la iglesia de enseñanzas y actitudes que podrían apartarla de la sinceridad y fidelidad a Cristo.",
+        "En conjunto, 2 Corintios muestra que el ministerio cristiano no se mide por la apariencia, el reconocimiento o la ausencia de dificultades, sino por la fidelidad a Cristo y la dependencia de la gracia de Dios. La reconciliación, el consuelo, la generosidad y la perseverancia forman parte de una vida comprometida con el evangelio. La experiencia de Pablo revela que la debilidad humana no impide el cumplimiento del propósito divino y que el servicio a Cristo impulsa a llevar el mensaje de reconciliación a otros."
+      ],
+      "crucigrama": {
+        "tema": "SEGUNDA CARTA A LOS CORINTIOS",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "CONSUELO",
+            "clue": "Alivio y fortaleza que Dios concede a quienes atraviesan momentos de aflicción."
+          },
+          {
+            "word": "AFLICCION",
+            "clue": "Sufrimiento que Pablo experimentaba durante su servicio por el evangelio."
+          },
+          {
+            "word": "RECONCILIACION",
+            "clue": "Obra de Dios por medio de Cristo para restablecer la relación con la humanidad."
+          },
+          {
+            "word": "PACTO",
+            "clue": "Acuerdo establecido por Dios, cuyo nuevo ministerio Pablo presenta como obra del Espíritu."
+          },
+          {
+            "word": "ESPIRITU",
+            "clue": "Quien da vida y capacita a los ministros del nuevo pacto. GLORIA: Manifestación de la grandeza de Dios que transforma a quienes contemplan al Señor."
+          },
+          {
+            "word": "VELO",
+            "clue": "Cubierta que Pablo utiliza como imagen al explicar la comprensión del antiguo pacto."
+          },
+          {
+            "word": "MINISTERIO",
+            "clue": "Servicio que Dios encomienda a quienes anuncian el evangelio."
+          },
+          {
+            "word": "DEBILIDAD",
+            "clue": "Condición humana en la que se manifiesta el poder de Cristo."
+          },
+          {
+            "word": "GRACIA",
+            "clue": "Favor de Dios que sostiene a Pablo en medio de sus dificultades."
+          },
+          {
+            "word": "EMBAJADORES",
+            "clue": "Representantes que anuncian el mensaje de reconciliación en nombre de Cristo."
+          },
+          {
+            "word": "OFRENDA",
+            "clue": "Contribución que los creyentes preparaban para ayudar a la iglesia de Jerusalén."
+          },
+          {
+            "word": "GENEROSIDAD",
+            "clue": "Actitud que Pablo anima a demostrar al compartir los recursos con los necesitados."
+          },
+          {
+            "word": "TITO",
+            "clue": "Colaborador de Pablo enviado a Corinto para atender asuntos de la iglesia."
+          },
+          {
+            "word": "COLECTA",
+            "clue": "Recaudación destinada a apoyar a los creyentes necesitados de Jerusalén."
+          },
+          {
+            "word": "APOSTOL",
+            "clue": "Persona enviada por Cristo para anunciar el evangelio y establecer comunidades de fe."
+          },
+          {
+            "word": "SUFRIMIENTO",
+            "clue": "Experiencia que Pablo presenta como parte de su servicio y fidelidad a Cristo."
+          },
+          {
+            "word": "FORTALEZA",
+            "clue": "Capacidad que Dios concede para perseverar en medio de las pruebas."
+          },
+          {
+            "word": "JACTANCIA",
+            "clue": "Actitud de orgullo que Pablo cuestiona al defender su ministerio frente a sus opositores."
+          },
+          {
+            "word": "ESPINA",
+            "clue": "Dificultad persistente que Pablo describe y por la cual pidió alivio al Señor."
+          }
+        ]
+      }
+    },
+    {
+      "orden": 4,
+      "tipo": "vocabulario",
+      "resena": [
+        "La sabiduría es una cualidad del pensamiento que permite comprender las situaciones, valorar las circunstancias y actuar de manera apropiada. No consiste únicamente en acumular información, sino en saber interpretarla y utilizarla con buen juicio. Una persona puede poseer muchos conocimientos y, sin embargo, tener dificultades para tomar decisiones acertadas. La sabiduría implica ir más allá de lo que se sabe para considerar cómo, cuándo y por qué conviene actuar.",
+        "En la vida cotidiana, la sabiduría suele manifestarse en la capacidad de aprender de las experiencias. Quien reconoce sus errores, considera las consecuencias de sus decisiones y evita repetir acciones perjudiciales demuestra una forma práctica de sabiduría. También se expresa en la prudencia, la paciencia y la disposición para escuchar antes de emitir una opinión. No siempre significa elegir el camino más fácil o inmediato, sino valorar qué alternativa resulta más conveniente según las circunstancias.",
+        "En el ámbito educativo, la sabiduría se relaciona con la aplicación del conocimiento. Aprender una fórmula, comprender un acontecimiento histórico o dominar una técnica son logros importantes; pero saber cuándo utilizar lo aprendido, reconocer sus límites y relacionarlo con otros conocimientos requiere un nivel adicional de comprensión. Por eso, la sabiduría favorece el pensamiento crítico, la capacidad de análisis y la resolución de problemas.",
+        "En las relaciones humanas, esta cualidad se manifiesta al reconocer que cada situación tiene particularidades. Una respuesta adecuada en determinado momento puede no serlo en otro. Saber escuchar, considerar diferentes perspectivas y elegir las palabras apropiadas son expresiones de buen juicio. La sabiduría también permite reconocer cuándo es necesario intervenir y cuándo conviene esperar, así como distinguir entre una reacción impulsiva y una respuesta cuidadosamente considerada.",
+        "Aunque suelen relacionarse, conocimiento, inteligencia y sabiduría no significan exactamente lo mismo. El conocimiento permite disponer de información y comprender hechos; la inteligencia facilita establecer relaciones, resolver problemas y encontrar alternativas; la sabiduría ayuda a valorar esas posibilidades y utilizarlas de manera sensata. Estas capacidades pueden complementarse, pero ninguna garantiza automáticamente la presencia de las otras.",
+        "En la filosofía, la sabiduría ha sido considerada una aspiración vinculada con la comprensión de la realidad, la búsqueda de la verdad y la orientación de la conducta. En este sentido, no se limita a resolver dificultades inmediatas, sino que también invita a reflexionar sobre aquello que merece ser valorado y sobre las consecuencias de nuestras acciones a largo plazo.",
+        "En las Escrituras, la sabiduría aparece como una cualidad de gran importancia para la vida humana. El libro de Proverbios la relaciona con la instrucción, el entendimiento, la prudencia y la capacidad de recibir consejo. Proverbios 1:7 presenta el temor del Señor como principio del conocimiento, mientras que Proverbios 2 describe la búsqueda de la sabiduría como un proceso que requiere atención y disposición para comprender.",
+        "En el Nuevo Testamento, la sabiduría también se relaciona con la manera de vivir y actuar. Santiago 3:13 la vincula con una conducta caracterizada por la buena manera de proceder y la mansedumbre. Por su parte, Colosenses 4:5 exhorta a conducirse sabiamente en el trato con quienes no pertenecen a la comunidad de fe. En estos contextos, la palabra conserva su sentido práctico: no se trata solamente de conocer principios, sino de reflejarlos en las decisiones y relaciones.",
+        "Así, la sabiduría reúne conocimiento, comprensión, experiencia y buen juicio. Su valor se reconoce en la capacidad de interpretar la realidad con mayor profundidad y responder a ella de manera considerada. Comprender esta palabra permite distinguir entre saber algo y saber cómo utilizarlo, una diferencia importante para el aprendizaje, la convivencia y la toma de decisiones."
+      ],
+      "crucigrama": {
+        "tema": "SABIDURÍA",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "SABIDURIA",
+            "clue": "Quien sabe aprovechar sus conocimientos y experiencias suele tomar decisiones acertadas."
+          },
+          {
+            "word": "CONOCIMIENTO",
+            "clue": "La información que una persona adquiere mediante el estudio y la experiencia."
+          },
+          {
+            "word": "INTELIGENCIA",
+            "clue": "Capacidad mental que permite resolver problemas y establecer relaciones entre ideas."
+          },
+          {
+            "word": "PRUDENCIA",
+            "clue": "Antes de actuar, conviene evaluar los riesgos y las posibles consecuencias."
+          },
+          {
+            "word": "DISCERNIMIENTO",
+            "clue": "Distinguir lo verdadero de lo falso o lo conveniente de lo perjudicial requiere atención y análisis."
+          },
+          {
+            "word": "COMPRENSION",
+            "clue": "Captar el sentido de una situación permite interpretarla más allá de las apariencias."
+          },
+          {
+            "word": "JUICIO",
+            "clue": "Valorar las circunstancias antes de emitir una opinión ayuda a evitar conclusiones apresuradas."
+          },
+          {
+            "word": "CRITERIO",
+            "clue": "Los principios y razones que orientan una elección permiten evaluar distintas alternativas."
+          },
+          {
+            "word": "EXPERIENCIA",
+            "clue": "Lo aprendido al enfrentar diversas situaciones puede servir de guía en el futuro."
+          },
+          {
+            "word": "REFLEXION",
+            "clue": "Considerar detenidamente una idea antes de responder puede cambiar nuestra perspectiva."
+          },
+          {
+            "word": "SENSATEZ",
+            "clue": "Una persona que evita los extremos y considera las circunstancias demuestra buen equilibrio."
+          },
+          {
+            "word": "CAUTELA",
+            "clue": "Avanzar con cuidado cuando existen riesgos ayuda a prevenir dificultades."
+          },
+          {
+            "word": "CONSEJO",
+            "clue": "La orientación de alguien con experiencia puede ayudarnos a encontrar una solución."
+          },
+          {
+            "word": "HUMILDAD",
+            "clue": "Reconocer los propios límites permite escuchar y aprender de los demás."
+          },
+          {
+            "word": "PACIENCIA",
+            "clue": "Esperar el momento oportuno sin actuar impulsivamente requiere dominio de uno mismo."
+          },
+          {
+            "word": "CORDURA",
+            "clue": "Mantener el equilibrio ante situaciones difíciles favorece las decisiones razonables."
+          },
+          {
+            "word": "INSTRUCCION",
+            "clue": "Las indicaciones y enseñanzas recibidas preparan a una persona para actuar correctamente."
+          },
+          {
+            "word": "APRENDIZAJE",
+            "clue": "Cada experiencia ofrece la oportunidad de adquirir nuevos conocimientos y desarrollar habilidades."
+          },
+          {
+            "word": "VERDAD",
+            "clue": "Una afirmación que corresponde con los hechos puede sostener una conclusión confiable."
+          },
+          {
+            "word": "ORIENTACION",
+            "clue": "Una guía adecuada ayuda a elegir el camino cuando existen varias posibilidades."
+          }
+        ]
+      }
+    },
+    {
+      "orden": 5,
+      "tipo": "boletin",
+      "titulo": "Actividades de la Semana",
+      "introduccion": "",
+      "actividades": [
+        {
+          "titulo": "Servicio de Oración. Martes",
+          "fecha": "2026-10-06",
+          "hora": "5.00 pm",
+          "descripcion": "Hatos",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Servicio Acción de gracias. Sociedad de damas. Jueves",
+          "fecha": "2026-10-08",
+          "hora": "4:00 PM",
+          "descripcion": "Hogar hermana Ramona Medrano.",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Célula de oración 24 de Julio  Jueves",
+          "fecha": "2026-11-08",
+          "hora": "6:00 PM",
+          "descripcion": "Hogar hermana Rosa Rivera",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Sociedad de jóvenes  Sábado",
+          "fecha": "2026-10-10",
+          "hora": "5:00 PM",
+          "descripcion": "Iglesia Agua viva.",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Escuela Bíblica Dominical",
+          "fecha": "2026-10-11",
+          "hora": "8:00 AM",
+          "descripcion": "Iglesia Agua viva.",
+          "imagen": null,
+          "video": null
+        }
+      ]
+    }
+  ]
+}

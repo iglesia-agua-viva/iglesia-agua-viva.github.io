@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SEGUNDA CARTA A LOS CORINTIOS</title>
+    <style>
+        :root {
+            --color-fondo: #f5f7fa;
+            --color-primario: #2c5282;
+            --color-secundario: #3182ce;
+            --color-acierto: #38a169;
+            --color-error: #e53e3e;
+            --color-negra: #1a202c;
+            --color-texto: #2d3748;
+            --color-borde: #cbd5e0;
+            --color-celda-activa: #bee3f8;
+            --color-celda-seleccionada: #90cdf4;
+            --sombra: 0 2px 8px rgba(0,0,0,0.08);
+            --radio: 8px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+            background: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.5;
+            padding: 16px;
+            min-height: 100vh;
+        }
+        .contenedor { max-width: 800px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 20px; }
+        header .sello { font-size: 0.75rem; letter-spacing: 1.5px; color: #718096; font-weight: 700; margin-bottom: 4px; text-transform: uppercase; }
+        header h1 { font-size: 1.5rem; color: var(--color-primario); margin-bottom: 4px; }
+        header .tema { font-size: 0.9rem; color: #718096; font-weight: 500; }
+        .resena {
+            background: white; padding: 20px; border-radius: var(--radio);
+            box-shadow: var(--sombra); margin-bottom: 20px;
+            font-size: 1.25rem; line-height: 1.75;
+            border-left: 4px solid var(--color-secundario);
+        }
+        .resena h3 { font-size: 1.35rem; color: var(--color-primario); margin-bottom: 12px; }
+        .barra-progreso {
+            background: white; padding: 12px 16px; border-radius: var(--radio);
+            box-shadow: var(--sombra); margin-bottom: 16px;
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 8px;
+        }
+        .barra-progreso .info { font-size: 0.9rem; font-weight: 500; }
+        .barra-progreso .progreso-visual {
+            flex: 1; min-width: 120px; height: 10px;
+            background: #e2e8f0; border-radius: 5px; overflow: hidden;
+        }
+        .barra-progreso .progreso-visual .relleno {
+            height: 100%; width: 0%; background: var(--color-acierto);
+            border-radius: 5px; transition: width 0.4s ease;
+        }
+        .botones {
+            display: flex; gap: 10px; flex-wrap: wrap;
+            justify-content: center; margin-bottom: 16px;
+        }
+        .btn {
+            padding: 10px 20px; border: none; border-radius: var(--radio);
+            font-size: 0.9rem; font-weight: 600; cursor: pointer;
+            transition: all 0.2s; touch-action: manipulation;
+        }
+        .btn-primario { background: var(--color-primario); color: white; }
+        .btn-primario:hover { background: var(--color-secundario); }
+        .btn-secundario { background: #edf2f7; color: var(--color-texto); }
+        .btn-secundario:hover { background: #e2e8f0; }
+        .btn-pista { background: #faf089; color: #744210; }
+        .btn-pista:hover { background: #f6e05e; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .layout { display: flex; flex-direction: column; gap: 20px; }
+        @media (min-width: 768px) { .layout { flex-direction: row; align-items: flex-start; } }
+        .tablero-wrapper { flex: 1; min-width: 0; display: flex; justify-content: center; }
+        .tablero {
+            display: grid; gap: 1px; background: var(--color-borde);
+            border: 2px solid var(--color-borde); border-radius: var(--radio);
+            overflow: hidden; box-shadow: var(--sombra);
+            width: 100%; max-width: 500px;
+        }
+        .celda {
+            position: relative; background: white;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: clamp(10px, 4vw, 18px);
+            color: var(--color-texto); cursor: pointer;
+            user-select: none; transition: background 0.15s;
+            aspect-ratio: 1;
+        }
+        .celda.negra { background: var(--color-negra); cursor: default; }
+        .celda.activa { background: var(--color-celda-activa); }
+        .celda.seleccionada { background: var(--color-celda-seleccionada); }
+        .celda.correcta { background: #c6f6d5; color: #22543d; }
+        .celda.incorrecta { background: #fed7d7; color: #742a2a; }
+        .celda .numero {
+            position: absolute; top: 1px; left: 2px;
+            font-size: clamp(6px, 2vw, 10px); font-weight: 600;
+            color: #4a5568; line-height: 1;
+        }
+        .celda input {
+            width: 100%; height: 100%; border: none; background: transparent;
+            text-align: center; font-weight: 700; font-size: inherit;
+            color: inherit; text-transform: uppercase; outline: none; padding: 0;
+            caret-color: var(--color-primario);
+        }
+        .pistas { flex: 1; min-width: 280px; }
+        .pistas h3 {
+            font-size: 1rem; color: var(--color-primario); margin-bottom: 10px;
+            padding-bottom: 6px; border-bottom: 2px solid var(--color-borde);
+        }
+        .pista-item {
+            background: white; padding: 10px 12px; margin-bottom: 8px;
+            border-radius: 6px; box-shadow: var(--sombra); font-size: 1.25rem;
+            cursor: pointer; transition: all 0.2s; border-left: 3px solid transparent;
+        }
+        .pista-item:hover { background: #f7fafc; }
+        .pista-item.activa { border-left-color: var(--color-secundario); background: #ebf8ff; }
+        .pista-item.completada {
+            opacity: 0.6; text-decoration: line-through;
+            background: #f0fff4; border-left-color: var(--color-acierto);
+        }
+        .pista-item .num { font-weight: 700; color: var(--color-primario); margin-right: 6px; }
+        .mensaje {
+            position: fixed; top: 16px; left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background: var(--color-primario); color: white;
+            padding: 12px 24px; border-radius: var(--radio); font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 1000;
+            transition: transform 0.3s ease; text-align: center; max-width: 90vw;
+        }
+        .mensaje.visible { transform: translateX(-50%) translateY(0); }
+        .mensaje.exito { background: var(--color-acierto); }
+        .mensaje.error { background: var(--color-error); }
+        .mensaje.pista-msg { background: #d69e2e; }
+        footer {
+            text-align: center; margin-top: 24px; padding-top: 16px;
+            border-top: 1px solid var(--color-borde); font-size: 0.8rem; color: #a0aec0;
+        }
+        .teclado {
+            display: none; position: fixed; bottom: 0; left: 0; right: 0;
+            background: #edf2f7; padding: 8px; gap: 4px;
+            justify-content: center; flex-wrap: wrap; z-index: 500;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 767px) {
+            .teclado { display: flex; }
+            body { padding-bottom: 80px; }
+        }
+        .tecla {
+            min-width: 32px; height: 42px; background: white;
+            border: 1px solid var(--color-borde); border-radius: 5px;
+            font-weight: 700; font-size: 1rem; color: var(--color-texto);
+            cursor: pointer; display: flex; align-items: center; justify-content: center;
+            flex: 1; max-width: 40px;
+        }
+        .tecla:active { background: var(--color-celda-seleccionada); }
+        .tecla-borrar { background: #fed7d7; color: #742a2a; }
+        /* === MODAL DE PUNTUACION === */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6); z-index: 2000;
+            justify-content: center; align-items: center;
+            padding: 16px;
+        }
+        .modal-overlay.visible { display: flex; }
+        .modal {
+            background: white; border-radius: 16px; padding: 28px;
+            max-width: 420px; width: 100%; text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: modalIn 0.4s ease;
+        }
+        @keyframes modalIn {
+            from { opacity: 0; transform: scale(0.85) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .modal h2 {
+            font-size: 1.6rem; color: var(--color-primario); margin-bottom: 8px;
+        }
+        .modal .subtitulo {
+            font-size: 1rem; color: #718096; margin-bottom: 20px;
+        }
+        .estrellas { font-size: 2.4rem; margin-bottom: 16px; letter-spacing: 4px; }
+        .puntaje-grande {
+            font-size: 3rem; font-weight: 800; color: var(--color-primario);
+            margin-bottom: 4px;
+        }
+        .puntaje-label {
+            font-size: 0.9rem; color: #718096; margin-bottom: 20px;
+        }
+        .stats-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+            margin-bottom: 20px;
+        }
+        .stat-box {
+            background: #f7fafc; padding: 12px; border-radius: 10px;
+        }
+        .stat-box .stat-valor {
+            font-size: 1.3rem; font-weight: 700; color: var(--color-primario);
+        }
+        .stat-box .stat-label {
+            font-size: 0.75rem; color: #a0aec0; text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .mensaje-final {
+            font-size: 1.1rem; font-weight: 600;
+            padding: 12px; border-radius: 10px; margin-bottom: 20px;
+        }
+        .mensaje-final.oro { background: #fefcbf; color: #744210; }
+        .mensaje-final.plata { background: #e2e8f0; color: #2d3748; }
+        .mensaje-final.bronce { background: #feebc8; color: #7c2d12; }
+        .mensaje-final.normal { background: #ebf8ff; color: #2c5282; }
+        .modal .btn { width: 100%; margin-top: 8px; }
+        </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            
+            <h1>SEGUNDA CARTA A LOS CORINTIOS</h1>
+            <div class="tema">SEGUNDA CARTA A LOS CORINTIOS</div>
+        </header>
+
+        <div class="resena">
+            <h3>Resena del tema</h3>
+            <p>La Segunda Carta a los Corintios fue escrita por el apóstol Pablo a una iglesia que él mismo había fundado y con la que mantenía una relación marcada tanto por el afecto como por las dificultades. Corinto era una ciudad importante del mundo grecorromano, caracterizada por su actividad comercial y diversidad cultural. Después de establecer la iglesia, Pablo tuvo que enfrentar conflictos, cuestionamientos sobre su autoridad y situaciones que pusieron a prueba su vínculo con los creyentes. Esta carta refleja una etapa especialmente personal de su ministerio, en la que expresa su preocupación por la condición espiritual de la comunidad y procura restaurar la confianza entre ellos.<br><br>Pablo comienza hablando del consuelo que Dios concede en medio de las aflicciones. Su propia experiencia demuestra que las dificultades no significan el abandono de Dios, sino que pueden convertirse en oportunidades para experimentar su fortaleza y acompañar a otros que atraviesan circunstancias semejantes. El apóstol explica también los motivos de sus decisiones y sus cambios de planes, procurando que los corintios comprendan que su ministerio está guiado por la sinceridad y no por intereses personales.<br><br>Uno de los temas centrales de la carta es la naturaleza del ministerio apostólico. Pablo presenta el nuevo pacto como una obra del Espíritu, que transforma la vida de las personas y les permite reflejar la gloria de Dios. A diferencia de quienes buscan reconocimiento mediante las apariencias, el apóstol destaca que el poder del ministerio no procede de la capacidad humana, sino de Dios. Por eso, aunque los mensajeros del evangelio experimentan debilidad, oposición y sufrimiento, la vida de Jesús se manifiesta a través de su servicio. Esta perspectiva permite comprender la afirmación de Pablo de que el poder de Dios se perfecciona en la debilidad.<br><br>La carta también aborda la reconciliación. Pablo explica que Dios reconcilió consigo al mundo por medio de Cristo y confió a sus siervos el mensaje de la reconciliación. Esta responsabilidad da al ministerio una dimensión que va más allá de la relación entre Pablo y los corintios: anunciar el evangelio significa invitar a las personas a restablecer su relación con Dios. Desde esta perspectiva, el apóstol les exhorta a vivir de manera coherente con la gracia que han recibido.<br><br>Otro asunto importante es la colecta destinada a los creyentes necesitados de Jerusalén. Pablo anima a los corintios a participar con generosidad, no por obligación, sino como una expresión genuina del amor cristiano. La ayuda material se convierte así en una manifestación de unidad entre comunidades de distintas regiones y en una oportunidad para demostrar que el evangelio transforma también la manera de compartir los recursos.<br><br>En la parte final, Pablo responde a quienes cuestionaban su autoridad y menospreciaban su apariencia o sus sufrimientos. En lugar de presumir de sus logros, presenta las dificultades que ha enfrentado por causa del evangelio y señala que su verdadera confianza está en la gracia de Cristo. Su defensa no busca el prestigio personal, sino proteger a la iglesia de enseñanzas y actitudes que podrían apartarla de la sinceridad y fidelidad a Cristo.<br><br>En conjunto, 2 Corintios muestra que el ministerio cristiano no se mide por la apariencia, el reconocimiento o la ausencia de dificultades, sino por la fidelidad a Cristo y la dependencia de la gracia de Dios. La reconciliación, el consuelo, la generosidad y la perseverancia forman parte de una vida comprometida con el evangelio. La experiencia de Pablo revela que la debilidad humana no impide el cumplimiento del propósito divino y que el servicio a Cristo impulsa a llevar el mensaje de reconciliación a otros.</p>
+        </div>
+
+        <div class="barra-progreso">
+            <div class="info">
+                <span id="contador">0 / 19 palabras</span>
+            </div>
+            <div class="progreso-visual">
+                <div class="relleno" id="barra-relleno"></div>
+            </div>
+            <div class="info" id="porcentaje">0%</div>
+            <div class="info" id="cronometro" style="font-family:monospace;">00:00</div>
+        </div>
+
+        <div class="botones">
+            <button class="btn btn-primario" onclick="verificarTodo()">Verificar</button>
+            <button class="btn btn-pista" onclick="darPista()">Mostrar pista</button>
+            <button class="btn btn-secundario" onclick="limpiarErrores()">Limpiar errores</button>
+            <button class="btn btn-secundario" onclick="reiniciar()">Reiniciar</button>
+        </div>
+
+        <div class="layout">
+            <div class="tablero-wrapper">
+                <div class="tablero" id="tablero"></div>
+            </div>
+
+            <div class="pistas">
+                <h3>Horizontales</h3>
+                <div id="pistas-h"></div>
+                <h3 style="margin-top: 16px;">Verticales</h3>
+                <div id="pistas-v"></div>
+            </div>
+        </div>
+
+        <footer>
+            Escuela del Pensamiento - Crucigrama interactivo
+        </footer>
+    </div>
+
+    <div class="mensaje" id="mensaje"></div>
+    
+        <div class="modal-overlay" id="modal-overlay">
+            <div class="modal">
+                <h2>¡Felicidades!</h2>
+                <div class="subtitulo">Completaste el crucigrama</div>
+                <div class="estrellas" id="modal-estrellas"></div>
+                <div class="puntaje-grande" id="modal-puntaje"></div>
+                <div class="puntaje-label">puntos</div>
+                <div class="mensaje-final" id="modal-mensaje"></div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-valor" id="stat-tiempo"></div>
+                        <div class="stat-label">Tiempo</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-valor" id="stat-pistas"></div>
+                        <div class="stat-label">Pistas usadas</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-valor" id="stat-verif"></div>
+                        <div class="stat-label">Verificaciones</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-valor" id="stat-letras"></div>
+                        <div class="stat-label">Letras correctas</div>
+                    </div>
+                </div>
+                <button class="btn btn-primario" onclick="cerrarModal()">Cerrar</button>
+            </div>
+        </div>
+        
+
+    <script>
+        const PALABRAS = [{"palabra": "MINISTERIO", "pista": "Servicio que Dios encomienda a quienes anuncian el evangelio.", "direccion": "horizontal", "fila_inicio": 1, "columna_inicio": 7, "numero": 3}, {"palabra": "FORTALEZA", "pista": "Capacidad que Dios concede para perseverar en medio de las pruebas.", "direccion": "horizontal", "fila_inicio": 3, "columna_inicio": 9, "numero": 4}, {"palabra": "GENEROSIDAD", "pista": "Actitud que Pablo anima a demostrar al compartir los recursos con los necesitados.", "direccion": "horizontal", "fila_inicio": 5, "columna_inicio": 3, "numero": 7}, {"palabra": "PACTO", "pista": "Acuerdo establecido por Dios, cuyo nuevo ministerio Pablo presenta como obra del Espíritu.", "direccion": "horizontal", "fila_inicio": 6, "columna_inicio": 14, "numero": 9}, {"palabra": "GRACIA", "pista": "Favor de Dios que sostiene a Pablo en medio de sus dificultades.", "direccion": "horizontal", "fila_inicio": 7, "columna_inicio": 0, "numero": 10}, {"palabra": "RECONCILIACION", "pista": "Obra de Dios por medio de Cristo para restablecer la relación con la humanidad.", "direccion": "horizontal", "fila_inicio": 10, "columna_inicio": 3, "numero": 15}, {"palabra": "CONSUELO", "pista": "Alivio y fortaleza que Dios concede a quienes atraviesan momentos de aflicción.", "direccion": "horizontal", "fila_inicio": 14, "columna_inicio": 0, "numero": 17}, {"palabra": "COLECTA", "pista": "Recaudación destinada a apoyar a los creyentes necesitados de Jerusalén.", "direccion": "horizontal", "fila_inicio": 16, "columna_inicio": 7, "numero": 18}, {"palabra": "AFLICCION", "pista": "Sufrimiento que Pablo experimentaba durante su servicio por el evangelio.", "direccion": "horizontal", "fila_inicio": 18, "columna_inicio": 3, "numero": 19}, {"palabra": "TITO", "pista": "Colaborador de Pablo enviado a Corinto para atender asuntos de la iglesia.", "direccion": "vertical", "fila_inicio": 0, "columna_inicio": 10, "numero": 1}, {"palabra": "OFRENDA", "pista": "Contribución que los creyentes preparaban para ayudar a la iglesia de Jerusalén.", "direccion": "vertical", "fila_inicio": 1, "columna_inicio": 5, "numero": 2}, {"palabra": "EMBAJADORES", "pista": "Representantes que anuncian el mensaje de reconciliación en nombre de Cristo.", "direccion": "vertical", "fila_inicio": 3, "columna_inicio": 15, "numero": 5}, {"palabra": "SUFRIMIENTO", "pista": "Experiencia que Pablo presenta como parte de su servicio y fidelidad a Cristo.", "direccion": "vertical", "fila_inicio": 4, "columna_inicio": 1, "numero": 6}, {"palabra": "DEBILIDAD", "pista": "Condición humana en la que se manifiesta el poder de Cristo.", "direccion": "vertical", "fila_inicio": 5, "columna_inicio": 11, "numero": 8}, {"palabra": "ESPIRITU", "pista": "Quien da vida y capacita a los ministros del nuevo pacto. GLORIA: Manifestación de la grandeza de Dios que transforma a quienes contemplan al Señor.", "direccion": "vertical", "fila_inicio": 7, "columna_inicio": 9, "numero": 11}, {"palabra": "APOSTOL", "pista": "Persona enviada por Cristo para anunciar el evangelio y establecer comunidades de fe.", "direccion": "vertical", "fila_inicio": 8, "columna_inicio": 6, "numero": 12}, {"palabra": "JACTANCIA", "pista": "Actitud de orgullo que Pablo cuestiona al defender su ministerio frente a sus opositores.", "direccion": "vertical", "fila_inicio": 8, "columna_inicio": 13, "numero": 13}, {"palabra": "VELO", "pista": "Cubierta que Pablo utiliza como imagen al explicar la comprensión del antiguo pacto.", "direccion": "vertical", "fila_inicio": 9, "columna_inicio": 4, "numero": 14}, {"palabra": "ESPINA", "pista": "Dificultad persistente que Pablo describe y por la cual pidió alivio al Señor.", "direccion": "vertical", "fila_inicio": 13, "columna_inicio": 3, "numero": 16}];
+        const FILAS = 19;
+        const COLUMNAS = 19;
+        const TOTAL_PALABRAS = 19;
+
+        let celdaActiva = null;
+        let direccionActiva = "horizontal";
+        let palabrasCompletadas = new Set();
+        let tiempoInicio = Date.now();
+        let pistasUsadas = 0;
+        let verificaciones = 0;
+        let juegoTerminado = false;
+
+        function init() {
+            renderTablero();
+            renderPistas();
+            document.addEventListener("keydown", manejarTecla);
+            iniciarCronometro();
+        }
+
+        function iniciarCronometro() {
+            setInterval(() => {
+                if (juegoTerminado) return;
+                const segundos = Math.floor((Date.now() - tiempoInicio) / 1000);
+                const min = Math.floor(segundos / 60).toString().padStart(2, "0");
+                const sec = (segundos % 60).toString().padStart(2, "0");
+                const el = document.getElementById("cronometro");
+                if (el) el.textContent = min + ":" + sec;
+            }, 1000);
+        }
+
+        function renderTablero() {
+            const tablero = document.getElementById("tablero");
+            tablero.innerHTML = "";
+            tablero.style.gridTemplateColumns = "repeat(" + COLUMNAS + ", 1fr)";
+            tablero.style.aspectRatio = COLUMNAS + " / " + FILAS;
+            for (let f = 0; f < FILAS; f++) {
+                for (let c = 0; c < COLUMNAS; c++) {
+                    const celda = document.createElement("div");
+                    celda.className = "celda";
+                    celda.dataset.fila = f;
+                    celda.dataset.columna = c;
+                    const esNegra = !PALABRAS.some(p => {
+                        const df = p.direccion === "horizontal" ? 0 : 1;
+                        const dc = p.direccion === "horizontal" ? 1 : 0;
+                        for (let i = 0; i < p.palabra.length; i++) {
+                            if (p.fila_inicio + i * df === f && p.columna_inicio + i * dc === c) return true;
+                        }
+                        return false;
+                    });
+                    if (esNegra) {
+                        celda.classList.add("negra");
+                        tablero.appendChild(celda);
+                        continue;
+                    }
+                    const palabraInicio = PALABRAS.find(p => p.fila_inicio === f && p.columna_inicio === c);
+                    if (palabraInicio) {
+                        const num = document.createElement("span");
+                        num.className = "numero";
+                        num.textContent = palabraInicio.numero || getNumero(palabraInicio);
+                        celda.appendChild(num);
+                    }
+                    const input = document.createElement("input");
+                    input.type = "text";
+                    input.maxLength = 1;
+                    input.dataset.fila = f;
+                    input.dataset.columna = c;
+                    input.addEventListener("focus", () => { seleccionarCelda(f, c); setTimeout(() => input.select(), 10); });
+                    input.addEventListener("input", (e) => manejarInput(e, f, c));
+                    input.addEventListener("keydown", (e) => manejarTeclaCelda(e, f, c));
+                    input.addEventListener("click", (e) => { e.stopPropagation(); seleccionarCelda(f, c); });
+                    celda.appendChild(input);
+                    tablero.appendChild(celda);
+                }
+            }
+        }
+
+        function getNumero(palabra) {
+            const ordenadas = [...PALABRAS].sort((a, b) => {
+                if (a.fila_inicio !== b.fila_inicio) return a.fila_inicio - b.fila_inicio;
+                return a.columna_inicio - b.columna_inicio;
+            });
+            for (let i = 0; i < ordenadas.length; i++) {
+                if (ordenadas[i] === palabra) return i + 1;
+            }
+            return 1;
+        }
+
+        function renderPistas() {
+            const ph = document.getElementById("pistas-h");
+            const pv = document.getElementById("pistas-v");
+            ph.innerHTML = "";
+            pv.innerHTML = "";
+            PALABRAS.forEach(p => {
+                const div = document.createElement("div");
+                div.className = "pista-item";
+                div.dataset.palabra = p.palabra;
+                div.innerHTML = '<span class="num">' + (p.numero || getNumero(p)) + '. </span>' + p.pista;
+                div.onclick = () => irAPalabra(p);
+                if (p.direccion === "horizontal") ph.appendChild(div);
+                else pv.appendChild(div);
+            });
+        }
+
+        function seleccionarCelda(f, c) {
+            celdaActiva = { fila: f, columna: c };
+            document.querySelectorAll(".celda").forEach(el => el.classList.remove("activa", "seleccionada"));
+            const celdaEl = getCeldaElement(f, c);
+            if (celdaEl) celdaEl.classList.add("seleccionada");
+            const palabra = encontrarPalabraEn(f, c, direccionActiva);
+            if (palabra) resaltarPalabra(palabra);
+            document.querySelectorAll(".pista-item").forEach(el => el.classList.remove("activa"));
+            if (palabra) {
+                const pistaEl = document.querySelector('.pista-item[data-palabra="' + palabra.palabra + '"]');
+                if (pistaEl) pistaEl.classList.add("activa");
+            }
+        }
+
+        function encontrarPalabraEn(f, c, direccion) {
+            return PALABRAS.find(p => {
+                if (p.direccion !== direccion) return false;
+                const df = direccion === "horizontal" ? 0 : 1;
+                const dc = direccion === "horizontal" ? 1 : 0;
+                for (let i = 0; i < p.palabra.length; i++) {
+                    if (p.fila_inicio + i * df === f && p.columna_inicio + i * dc === c) return true;
+                }
+                return false;
+            });
+        }
+
+        function resaltarPalabra(palabra) {
+            const df = palabra.direccion === "horizontal" ? 0 : 1;
+            const dc = palabra.direccion === "horizontal" ? 1 : 0;
+            for (let i = 0; i < palabra.palabra.length; i++) {
+                const el = getCeldaElement(palabra.fila_inicio + i * df, palabra.columna_inicio + i * dc);
+                if (el) el.classList.add("activa");
+            }
+        }
+
+        function getCeldaElement(f, c) {
+            return document.querySelector('.celda[data-fila="' + f + '"][data-columna="' + c + '"]');
+        }
+
+        function getInput(f, c) {
+            const celda = getCeldaElement(f, c);
+            return celda ? celda.querySelector("input") : null;
+        }
+
+        function irAPalabra(palabra) {
+            direccionActiva = palabra.direccion;
+            seleccionarCelda(palabra.fila_inicio, palabra.columna_inicio);
+            const input = getInput(palabra.fila_inicio, palabra.columna_inicio);
+            if (input) input.focus();
+        }
+
+        function manejarInput(e, f, c) {
+            const val = e.target.value.toUpperCase();
+            e.target.value = val;
+            if (val.length === 1) {
+                moverSiguiente(f, c);
+            }
+        }
+
+        function manejarTeclaCelda(e, f, c) {
+            if (e.key === "Enter") { e.preventDefault(); verificarTodo(); return; }
+            if (e.key === "Backspace" && !e.target.value) { e.preventDefault(); moverAnterior(f, c); return; }
+            if (e.key === "ArrowRight") { direccionActiva = "horizontal"; mover(f, c, 0, 1); }
+            if (e.key === "ArrowLeft") { direccionActiva = "horizontal"; mover(f, c, 0, -1); }
+            if (e.key === "ArrowDown") { direccionActiva = "vertical"; mover(f, c, 1, 0); }
+            if (e.key === "ArrowUp") { direccionActiva = "vertical"; mover(f, c, -1, 0); }
+            if (e.key === " ") { e.preventDefault(); direccionActiva = direccionActiva === "horizontal" ? "vertical" : "horizontal"; seleccionarCelda(f, c); }
+        }
+
+        function manejarTecla(e) {
+            if (e.key === "Tab") {
+                e.preventDefault();
+                if (e.shiftKey) moverAnterior(celdaActiva.fila, celdaActiva.columna);
+                else moverSiguiente(celdaActiva.fila, celdaActiva.columna);
+            }
+        }
+
+        function mover(f, c, df, dc) {
+            const nf = f + df, nc = c + dc;
+            const input = getInput(nf, nc);
+            if (input) { input.focus(); seleccionarCelda(nf, nc); }
+        }
+
+        function moverSiguiente(f, c) {
+            const palabra = encontrarPalabraEn(f, c, direccionActiva);
+            if (!palabra) return;
+            const df = palabra.direccion === "horizontal" ? 0 : 1;
+            const dc = palabra.direccion === "horizontal" ? 1 : 0;
+            const idxInicial = Math.abs((f - palabra.fila_inicio) + (c - palabra.columna_inicio));
+            const siguienteIdx = idxInicial + 1;
+            if (siguienteIdx >= palabra.palabra.length) return;
+            const nf = palabra.fila_inicio + siguienteIdx * df;
+            const nc = palabra.columna_inicio + siguienteIdx * dc;
+            const inputDestino = getInput(nf, nc);
+            if (inputDestino) {
+                inputDestino.focus();
+                seleccionarCelda(nf, nc);
+            }
+        }
+
+        function moverAnterior(f, c) {
+            const palabra = encontrarPalabraEn(f, c, direccionActiva);
+            if (!palabra) return;
+            const df = palabra.direccion === "horizontal" ? 0 : 1;
+            const dc = palabra.direccion === "horizontal" ? 1 : 0;
+            const idx = Math.abs((f - palabra.fila_inicio) + (c - palabra.columna_inicio));
+            if (idx > 0) { mover(f, c, -df, -dc); }
+        }
+
+        function verificarTodo() {
+            if (juegoTerminado) return;
+            verificaciones++;
+            let correctas = 0;
+            let totalLetras = 0;
+            let letrasCorrectas = 0;
+            let letrasIncorrectas = 0;
+
+            PALABRAS.forEach(p => {
+                const df = p.direccion === "horizontal" ? 0 : 1;
+                const dc = p.direccion === "horizontal" ? 1 : 0;
+                let palabraCorrecta = true;
+                for (let i = 0; i < p.palabra.length; i++) {
+                    const f = p.fila_inicio + i * df;
+                    const c = p.columna_inicio + i * dc;
+                    const input = getInput(f, c);
+                    const letraCorrecta = p.palabra[i].toUpperCase();
+                    totalLetras++;
+                    if (input) {
+                        const val = input.value.toUpperCase();
+                        const celda = getCeldaElement(f, c);
+                        if (val === letraCorrecta) {
+                            letrasCorrectas++;
+                            celda.classList.remove("incorrecta");
+                            celda.classList.add("correcta");
+                        } else if (val) {
+                            palabraCorrecta = false;
+                            letrasIncorrectas++;
+                            celda.classList.remove("correcta");
+                            celda.classList.add("incorrecta");
+                        } else {
+                            palabraCorrecta = false;
+                            celda.classList.remove("correcta", "incorrecta");
+                        }
+                    }
+                }
+                if (palabraCorrecta && p.palabra.length > 0) {
+                    correctas++;
+                    palabrasCompletadas.add(p.palabra);
+                    const pistaEl = document.querySelector('.pista-item[data-palabra="' + p.palabra + '"]');
+                    if (pistaEl) pistaEl.classList.add("completada");
+                }
+            });
+
+            actualizarProgreso();
+
+            if (correctas === PALABRAS.length) {
+                juegoTerminado = true;
+                const tiempoSegundos = Math.floor((Date.now() - tiempoInicio) / 1000);
+                mostrarPuntuacion(correctas, letrasCorrectas, letrasIncorrectas, tiempoSegundos);
+            } else if (letrasCorrectas === totalLetras) {
+                mostrarMensaje("Vas muy bien. Llevas " + correctas + " de " + PALABRAS.length + " palabras.", "exito");
+            } else {
+                mostrarMensaje("Sigue intentando. Llevas " + correctas + " de " + PALABRAS.length + " palabras correctas.", "pista-msg");
+            }
+        }
+
+        function calcularPuntuacion(correctas, letrasCorrectas, letrasIncorrectas, tiempoSeg) {
+            let puntos = 1000;
+            puntos += correctas * 100;
+            puntos += letrasCorrectas * 10;
+            puntos -= letrasIncorrectas * 5;
+            puntos -= pistasUsadas * 50;
+            puntos -= verificaciones * 10;
+            const minutos = Math.floor(tiempoSeg / 60);
+            if (minutos <= 3) puntos += 200;
+            else if (minutos <= 5) puntos += 100;
+            else if (minutos <= 10) puntos += 50;
+            else puntos -= (minutos - 10) * 10;
+            return Math.max(0, Math.round(puntos));
+        }
+
+        function calcularEstrellas(puntuacion) {
+            if (puntuacion >= 1500) return 5;
+            if (puntuacion >= 1200) return 4;
+            if (puntuacion >= 900) return 3;
+            if (puntuacion >= 600) return 2;
+            return 1;
+        }
+
+        function mensajeFinal(puntuacion) {
+            var r = {};
+            if (puntuacion >= 1500) {
+                r.texto = "EXCEPCIONAL: Dominas el tema a la perfeccion.";
+                r.clase = "oro";
+            } else if (puntuacion >= 1200) {
+                r.texto = "MUY BIEN: Gran conocimiento del tema.";
+                r.clase = "plata";
+            } else if (puntuacion >= 900) {
+                r.texto = "BIEN: Buen desempeno, sigue practicando.";
+                r.clase = "bronce";
+            } else {
+                r.texto = "SIGUE ESTUDIANDO: Cada intento te acerca a la meta.";
+                r.clase = "normal";
+            }
+            return r;
+        }
+
+        function mostrarPuntuacion(correctas, letrasCorrectas, letrasIncorrectas, tiempoSeg) {
+            const puntuacion = calcularPuntuacion(correctas, letrasCorrectas, letrasIncorrectas, tiempoSeg);
+            const estrellas = calcularEstrellas(puntuacion);
+            const msg = mensajeFinal(puntuacion);
+            const min = Math.floor(tiempoSeg / 60).toString().padStart(2, "0");
+            const sec = (tiempoSeg % 60).toString().padStart(2, "0");
+
+            document.getElementById("modal-puntaje").textContent = puntuacion;
+            document.getElementById("modal-estrellas").textContent = "★".repeat(estrellas) + "☆".repeat(5 - estrellas);
+            document.getElementById("modal-mensaje").textContent = msg.texto;
+            document.getElementById("modal-mensaje").className = "mensaje-final " + msg.clase;
+            document.getElementById("stat-tiempo").textContent = min + ":" + sec;
+            document.getElementById("stat-pistas").textContent = pistasUsadas;
+            document.getElementById("stat-verif").textContent = verificaciones;
+            document.getElementById("stat-letras").textContent = letrasCorrectas + "/" + (letrasCorrectas + letrasIncorrectas);
+
+            document.getElementById("modal-overlay").classList.add("visible");
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal-overlay").classList.remove("visible");
+        }
+
+        function actualizarProgreso() {
+            const completadas = palabrasCompletadas.size;
+            const total = PALABRAS.length;
+            const porcentaje = total > 0 ? Math.round((completadas / total) * 100) : 0;
+            document.getElementById("contador").textContent = completadas + " / " + total + " palabras";
+            document.getElementById("porcentaje").textContent = porcentaje + "%";
+            document.getElementById("barra-relleno").style.width = porcentaje + "%";
+        }
+
+        function darPista() {
+            if (!celdaActiva) { mostrarMensaje("Selecciona una celda primero.", "error"); return; }
+            const palabra = encontrarPalabraEn(celdaActiva.fila, celdaActiva.columna, direccionActiva);
+            if (!palabra) { mostrarMensaje("No hay palabra en esta direccion.", "error"); return; }
+            const df = palabra.direccion === "horizontal" ? 0 : 1;
+            const dc = palabra.direccion === "horizontal" ? 1 : 0;
+            for (let i = 0; i < palabra.palabra.length; i++) {
+                const f = palabra.fila_inicio + i * df;
+                const c = palabra.columna_inicio + i * dc;
+                const input = getInput(f, c);
+                if (input && !input.value) {
+                    input.value = palabra.palabra[i].toUpperCase();
+                    input.dispatchEvent(new Event("input"));
+                    pistasUsadas++;
+                    mostrarMensaje("Se revelo una letra de '" + palabra.palabra + "'", "pista-msg");
+                    return;
+                }
+            }
+            mostrarMensaje("Esa palabra ya esta completa.", "exito");
+        }
+
+        function limpiarErrores() {
+            document.querySelectorAll(".celda.incorrecta").forEach(el => {
+                el.classList.remove("incorrecta");
+                const input = el.querySelector("input");
+                if (input) input.value = "";
+            });
+            mostrarMensaje("Errores limpiados.", "pista-msg");
+        }
+
+        function reiniciar() {
+            if (!confirm("Seguro que quieres borrar todo y empezar de nuevo?")) return;
+            document.querySelectorAll("input").forEach(input => input.value = "");
+            document.querySelectorAll(".celda").forEach(el => el.classList.remove("correcta", "incorrecta"));
+            document.querySelectorAll(".pista-item").forEach(el => el.classList.remove("completada"));
+            palabrasCompletadas.clear();
+            pistasUsadas = 0;
+            verificaciones = 0;
+            juegoTerminado = false;
+            tiempoInicio = Date.now();
+            actualizarProgreso();
+            mostrarMensaje("Crucigrama reiniciado.", "pista-msg");
+        }
+
+        function mostrarMensaje(texto, tipo) {
+            const msg = document.getElementById("mensaje");
+            msg.textContent = texto;
+            msg.className = "mensaje visible " + tipo;
+            setTimeout(() => { msg.classList.remove("visible"); }, 3000);
+        }
+
+        init();
+        </script>
+</body>
+</html>
