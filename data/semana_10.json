@@ -1,0 +1,461 @@
+{
+  "iglesia": "Agua Viva",
+  "guia_numero": 10,
+  "bloques": [
+    {
+      "orden": 1,
+      "tipo": "sermon",
+      "resena": [
+        "La Voz que Supera Todo Ruido",
+        "Texto Base: Mateo 17:1–8 Tema Principal: La supremacía de la voz de Dios",
+        "Introducción: Las décadas de los 80 y 90 estuvieron marcadas en el boxeo mundial por figuras imponentes como Mike Tyson, Evander Holyfield, Frans Botha y, tiempo atrás, Muhammad Ali. En un deporte con especificaciones tan estrictas, donde miles de fanáticos gritan en un estadio ensordecedor, existe una regla vital dentro del cuadrilátero: el boxeador debe escuchar atentamente la voz de su entrenador. Un solo instante de distracción al no atender a su esquina podía significar la derrota. En la vida cristiana enfrentamos un rugido constante de opiniones, emociones y tentaciones; pero en Mateo 17 descubrimos la necesidad urgente de afinar el oído a la única voz soberana.",
+        "I. ELEMENTOS IMPORTANTES EN LA TRANSFIGURACIÓN",
+        "1. La Transfiguración como un elemento esencial e importante No fue un evento místico casual, sino una manifestación estratégica. Cristo reveló un destello de su gloria divina antes de enfrentar la sombra de la cruz, reafirmando su Deidad absoluta ante sus discípulos.",
+        "2. Los privilegiados: Pedro, Jacobo y Juan Jesús seleccionó a este grupo íntimo para presenciar su majestad en el monte alto. Serían los mismos llamados a acompañarlo en su agonía en Getsemaní, cimentando una fe inamovible para los desafíos futuros.",
+        "3. Moisés y Elías: La Ley y los Profetas Aparecieron vestidos de gloria conversando con Cristo. Tiempo atrás, Moisés suplicó en el desierto: «Te ruego que me muestres tu gloria» (Éxodo 33:18). Allí, en el monte, contempló cara a cara la Gloria Encarnada. Ambos personajes representan que la Ley y los Profetas encuentran su cumplimiento perfecto en Jesús.",
+        "4. El ambiente «mágico» y la reacción de Pedro La atmósfera celestial fue tan cautivadora que Pedro, maravillado por la emoción del momento, exclamó: «Señor, bueno es para nosotros que estemos aquí; si quieres, hagamos tres enramadas...» Deseaba congelar la experiencia espiritual.",
+        "5. La voz que deben escuchar Mientras Pedro hablaba, una nube de luz los cubrió. El Padre intervino para reorientar el enfoque: no era momento de edificar altares a los siervos, sino de postrarse ante el Hijo y atender su mandato directo.",
+        "II. CONSEJOS PRÁCTICOS PARA LA VIDA CRISTIANA",
+        "1. Cuida todo lo que deseas El apóstol Pedro tuvo una intención sincera al proponer las tres enramadas, pero su deseo no estaba alineado con el plan redentor de Dios. Un deseo no filtrado por la Verdad puede tornarse equivocado o pecaminoso. Hoy en día existen filosofías populares que distorsionan la verdad de la Palabra:",
+        "«Haz lo que te diga tu corazón» (Jeremías 17:9 nos recuerda que el corazón es engañoso).",
+        "«Haz lo que te diga tu conciencia o tus sentimientos.»",
+        "«Si sientes paz, entonces hazlo» (La paz subjetiva no puede sustituir el mandato bíblico).",
+        "2. Cuida todo lo que hablas El versículo 5 destaca que mientras Pedro aún hablaba, fue interrumpido por la voz del Padre. Muchas veces hablamos impulsivamente desde la emoción o el entusiasmo humano. Debemos cuidar que nuestra boca exprese palabras sazonadas con sal (Colosenses 4:6) y aprender a guardar silencio reverente en la presencia de Dios.",
+        "3. Cuida todo lo que escuchas (Mateo 17:5) «Este es mi Hijo amado, en quien tengo complacencia; a él oíd.»  La voz de Dios Padre se centra de manera exclusiva en Jesucristo. En medio del ruido cultural, teológico o personal, el mandato supremo es centrar nuestra escucha en Cristo y filtrar cada pensamiento a través de su Palabra. CONCLUSIÓN Al oír la voz divina, los discípulos cayeron sobre sus rostros llenos de temor. Pero Jesús se acercó, los tocó y les dijo: «Levantaos, no temáis.» El relato culmina con un pasaje extraordinario en el versículo 8: «Y alzando ellos los ojos, a nadie vieron sino a Jesús solo.» Así como el boxeador dentro del cuadrilátero decide ignorar el clamor del estadio para enfocar su oído únicamente en las instrucciones de su entrenador, nosotros debemos aprender a silenciar los ruidos de este mundo. Cuando las emociones se calman y las voces humanas se apagan, nuestra vida debe quedar cimentada en la sola mirada y en la sola voz de Jesús."
+      ],
+      "crucigrama": {
+        "tema": "La supremacía de la voz de Dios",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "TRANSFIGURACION",
+            "clue": "Revelación de la gloria divina de Cristo en el monte alto antes de enfrentar el evento de la cruz."
+          },
+          {
+            "word": "MOISES",
+            "clue": "Figura que representa la Ley y que contempló la Gloria Encarnada cara a cara en la Transfiguración."
+          },
+          {
+            "word": "ELIAS",
+            "clue": "Personaje profético que junto a la Ley encuentra su cumplimiento perfecto en la persona de Jesucristo."
+          },
+          {
+            "word": "PEDRO",
+            "clue": "Discípulo que propuso hacer tres enramadas movido por la emoción del momento en el monte alto."
+          },
+          {
+            "word": "JACOBO",
+            "clue": "Uno de los tres discípulos seleccionados para presenciar la majestad de Cristo en el monte."
+          },
+          {
+            "word": "JUAN",
+            "clue": "Creyente del grupo íntimo de Jesús que fue testigo de su gloria en el monte y de su agonía."
+          },
+          {
+            "word": "ENRAMADAS",
+            "clue": "Estructuras que Pedro pretendía edificar para conservar la experiencia celestial en la montaña."
+          },
+          {
+            "word": "CORAZON",
+            "clue": "Entidad que las Escrituras señalan como engañosa para advertir que no debemos seguir sus impulsos."
+          },
+          {
+            "word": "SILENCIO",
+            "clue": "Actitud reverente que debemos guardar ante la presencia divina cuidando todo lo que hablamos."
+          },
+          {
+            "word": "DESIERTO",
+            "clue": "Lugar donde Moisés suplicó conocer la gloria divina antes de contemplarla en el monte alto."
+          },
+          {
+            "word": "ALTAR",
+            "clue": "Estructura que no correspondía edificar a los siervos ante la manifestación de la voz del Padre."
+          },
+          {
+            "word": "NUBE",
+            "clue": "Manifestación luminosa que cubrió a los discípulos mientras la voz del Padre revelaba a su Hijo."
+          },
+          {
+            "word": "SABIDURIA",
+            "clue": "Virtud necesaria para examinar las emociones y no actuar impulsivamente ante los sentimientos."
+          },
+          {
+            "word": "BOXEADOR",
+            "clue": "Figura deportiva utilizada para ilustrar la necesidad de escuchar la voz del entrenador en el ruido."
+          },
+          {
+            "word": "ENTRENADOR",
+            "clue": "Persona a quien el atleta debe atender exclusivamente en medio del estruendo del cuadrilátero."
+          },
+          {
+            "word": "MAJESTAD",
+            "clue": "Condición de gloria y soberanía revelada por Cristo ante su grupo íntimo de discípulos."
+          },
+          {
+            "word": "ESQUINA",
+            "clue": "Lugar desde donde el preparador orienta al atleta para evitar la distracción en la contienda."
+          },
+          {
+            "word": "PALABRA",
+            "clue": "Filtro bíblico a través del cual el creyente debe examinar cada pensamiento y filosofía humana."
+          },
+          {
+            "word": "VERDAD",
+            "clue": "Principio divino por el cual deben filtrarse todos los deseos para no caer en el error."
+          },
+          {
+            "word": "JESUS",
+            "clue": "Hijo amado del Padre a quien únicamente debemos contemplar y escuchar en medio del ruido."
+          }
+        ]
+      },
+      "pastor": "Edwin Navarro",
+      "titulo": "La Voz que Supera Todo Ruido"
+    },
+    {
+      "orden": 2,
+      "tipo": "personaje_biblico",
+      "resena": [
+        "Introducción: El concepto de sistema y la Palabra de Dios Para comprender adecuadamente la doctrina bíblica de la inerrancia e infalibilidad de la Biblia, es indispensable comenzar analizando qué es un sistema y cómo opera la interdependencia de sus partes.  Un sistema se define como un conjunto organizado de elementos, principios o partes que interactúan de manera coordinada y armónica para cumplir una función o propósito determinado. Ninguna de sus componentes opera de forma aislada; por el contrario, la alteración o falla de una sola de sus partes afecta de manera directa la salud, el equilibrio y la integridad de la totalidad del conjunto. Un ejemplo claro y visible de este principio lo encontramos en el cuerpo humano, el cual está constituido por diversos sistemas interconectados: •\tEl sistema digestivo: Se encarga de procesar los alimentos y extraer los nutrientes necesarios para alimentar y reponer las energías del organismo. •\tEl sistema óseo: Proporciona la estructura, el soporte y la protección mecánica a los órganos vitales, sosteniendo toda la anatomía. •\tEl sistema nervioso: Actúa como el centro de mando y comunicación, transmitiendo los impulsos y órdenes que regulan cada movimiento y respuesta. •\tEl sistema respiratorio: Suministra el oxígeno indispensable para la vida celular y elimina los desechos gaseosos del cuerpo. Cada uno de estos sistemas cumple un rol específico y especializado; sin embargo, ninguno puede subsistir ni funcionar de manera autónoma. Es la alineación perfecta, la cohesión y el funcionamiento articulado de todos ellos lo que le otorga al cuerpo humano su vida, vitalidad, equilibrio y pleno funcionamiento. Si el sistema nervioso falla, el movimiento se paraliza; si el sistema respiratorio se detiene, la vida se apaga. De la misma manera, la fe y la doctrina cristiana no consisten en una colección fragmentada de ideas aisladas o enseñanzas independientes. Conforman un sistema doctrinal integrado y armónico. Dentro de esta estructura teológica, la inerrancia y la infalibilidad de las Escrituras constituyen el fundamento y la columna vertebral sobre la cual se sostiene la veracidad de todo el resto de la revelación divina. Si la verdad y la confiabilidad de la Palabra de Dios se comprometen en algún punto, la vitalidad, la autoridad y el funcionamiento de toda la fe cristiana se ven profundamente afectados.",
+        "1. Distinción entre inerrancia e infalibilidad •\tInfalibilidad: Hace referencia a la incapacidad de fallar, engañar o decepcionar. Afirmar que la Biblia es infalible significa que la Palabra de Dios es enteramente confiable, segura y eficaz en su propósito; no puede errar ni llevar al error a quienes confían en ella. •\tInerrancia: Es la consecuencia práctica y lógica de la infalibilidad. Significa que la Biblia está totalmente libre de error, falsedad o contradicción en sus escritos originales (autógrafos), abarcando no solo sus enseñanzas espirituales, sino también sus afirmaciones históricas, geográficas y científicas cuando estas se expresan. En resumen: la infalibilidad se enfoca en el carácter y la efectividad del mensaje de Dios (no puede fallar), mientras que la inerrancia se enfoca en la veracidad absoluta de cada una de sus afirmaciones (no tiene errores).",
+        "2. La Biblia como única regla infalible de fe y práctica Es doctrinalmente preciso afirmar que la Biblia es la única regla infalible de fe y práctica. Esta declaración histórica enfatiza que las Escrituras poseen la autoridad suprema para determinar:      1.\tLo que debemos creer (la fe, la doctrina, la teología).     2.\tCómo debemos vivir (la práctica, la ética, la conducta cristiana). Ningún concilio, tradición humana, experiencia personal ni revelación posterior posee el nivel de autoridad divinamente garantizada que pertenece exclusivamente a las Sagradas Escrituras.",
+        "3. El alcance total de la infalibilidad e inerrancia bíblica Es importante enfatizar que la Biblia no es solamente infalible cuando habla de fe y práctica. Reducir la infalibilidad e inerrancia únicamente a las cuestiones teológicas o morales (postura conocida como inerrancia limitada) presenta serios problemas metodológicos y doctrinales: •\tUnidad e integridad del texto: Las verdades teológicas de las Escrituras están indisolublemente ligadas a acontecimientos históricos reales. Si la Biblia fuera falible en sus datos históricos, geográficos o científicos, se socavaría la base de la fe sobre la cual descansa la salvación (por ejemplo, la realidad histórica de la creación, la persona de Cristo, la crucifixión y la resurrección). •\tConsistencia del sistema: Volviendo al concepto de sistema, no se puede dividir la Escritura en \"secciones divinas e inerrantes\" (fe y práctica) y \"secciones humanas y falibles\" (historia y ciencia). sí una sola parte de la Biblia falla o tiene errores en la historia o en los datos, todo el mensaje se tambalea, se pone en duda la confiabilidad de todo el conjunto. Por lo tanto, la postura bíblica e histórica sostiene que la Biblia es completamente inerrante e infalible en todo lo que afirma, constituyendo una verdad uniforme, plenamente confiable e integrada.",
+        "4. Aparentes contradicciones y el impacto en el mensaje de la fe Al defender la inerrancia y la infalibilidad de las Escrituras, nos enfrentamos con frecuencia a objeciones históricas y textuales.  A. Los aparentes anacronismos: La purificación del templo en Juan y los Evangelios Sinópticos Uno de los señalamientos más recurrentes se refiere a la ubicación cronológica de la purificación del templo. Mientras los evangelios sinópticos (Mateo, Marcos y Lucas) sitúan este hecho al final del ministerio público de Jesús durante la semana de la Pasión, el Evangelio de Juan lo coloca al principio, apenas en el capítulo dos. Criterio temático vs. cronológico: El apóstol Juan, en su diseño teológico, estructuró acontecimientos para destacar de entrada la identidad de Jesús como el Cordero de Dios y la sustitución del antiguo culto sacrificial.  B. Otro de los señalamientos hace referencia a problemas cronológicos en la Creación (La luz y el Sol en Génesis 1)  Dios crea la luz en el primer día, mientras que los astros (el sol y la luna) no son establecidos o hechos visibles hasta el cuarto día. •\tRespuesta doctrinal: Asumir que estas aparentes discrepancias convierten el relato en un elemento meramente mitológico del pueblo de Israel destruye el cimiento de la revelación. La luz inicial proviene de la acción directa de Dios como fuente primaria de iluminación y orden antes de delegar o disponer las lumbreras celestes para señalar las estaciones y los días. Reducir la Creación a un mito socava la verdad absoluta de la Palabra. La historicidad de las genealogías y la persona de Jesús Restar crédito a la veracidad histórica de la Creación o de los registros bíblicos afecta directamente la credibilidad y la identidad del mismo Jesucristo: •\tJesús como la Verdad: Jesús se autodeclaró como \"el camino, la verdad y la vida\" y afirmó que nadie viene al Padre sino por Él. Si los relatos de los cuales habló Jesús fuesen falsedades o Mitos, su propia veracidad quedaría comprometida. •\tLa línea genealógica hasta Adán: Evangelios como el de Lucas trazan la genealogía de Jesús remontándose hasta Adán. Si Adán fuera una figura mitológica y no un personaje histórico real, la línea genealógica de Jesús se basaría en una ficción, haciendo imposible sostener la realidad del \"último Adán\" que vino a redimir a la humanidad. C. El fundamento indispensable para la Gran Comisión Poner en duda la historicidad de las Escrituras despoja a la Iglesia de su certeza y autoridad para predicar: •\tLa Gran Comisión (Mateo 28): Jesús declaró: \"Toda potestad me es dada en el cielo y en la tierra. Por tanto, id, y haced discípulos a todas las naciones...\". Este mandato sería imposible de cumplir con seguridad y firmeza si tuviésemos dudas sobre el origen, la genealogía o la veracidad histórica de Jesús. La Gran Comisión reposa sobre la autoridad real y comprobada de un Cristo histórico y resucitado. •\t(1 Corintios 15:1-4): El apóstol Pablo afirma enfáticamente que lo que él enseñó fue exactamente lo que recibió: que Cristo murió por nuestros pecados conforme a las Escrituras, que fue sepultado, que resucitó al tercer día conforme a las Escrituras, y que se apareció a Cefas, a los doce y finalmente a él. •\tConclusión: Si no pudiéramos asegurar con firmeza la veracidad histórica de estos acontecimientos en la Biblia, Pablo tampoco habría podido afirmar la existencia y obra del Jesús histórico. Jesús no fue simplemente un maestro ético o una idea filosófica, sino un hombre real en el tiempo y el espacio cuyo sacrificio y resurrección garantizan nuestra salvación"
+      ],
+      "crucigrama": {
+        "tema": "INERRANCIA E INFALIBILIDAD DE LAS ESCRITURAS",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "ADAN",
+            "clue": "Primer hombre en la genealogía de Jesús cuyo registro histórico es clave para la doctrina del último Adán."
+          },
+          {
+            "word": "ANACRONISMOS",
+            "clue": "Objeciones históricas sobre el orden cronológico de eventos como la purificación del templo."
+          },
+          {
+            "word": "AUTOGRAFOS",
+            "clue": "Escritos bíblicos originales en los cuales la inerrancia se aplica de manera absoluta e inicial."
+          },
+          {
+            "word": "AUTORIDAD",
+            "clue": "Atributo supremo de las Escrituras para regir sobre la fe, la doctrina y la conducta del creyente."
+          },
+          {
+            "word": "CEFAS",
+            "clue": "Apóstol a quien se apareció Cristo resucitado conforme al testimonio de la fe recibido por Pablo."
+          },
+          {
+            "word": "COMISION",
+            "clue": "Mandato supremo de Cristo a la Iglesia para hacer discípulos a todas las naciones con seguridad."
+          },
+          {
+            "word": "CUERPO",
+            "clue": "Ilustración del sistema humano cuyos órganos interconectados muestran la dependencia de la verdad bíblica."
+          },
+          {
+            "word": "DOCTRINA",
+            "clue": "Conjunto armónico de enseñanzas donde la inerrancia actúa como columna vertebral de la fe."
+          },
+          {
+            "word": "INFALIBILIDAD",
+            "clue": "Incapacidad de las Escrituras para errar, engañar o defraudar en su propósito divino."
+          },
+          {
+            "word": "INERRANCIA",
+            "clue": "Cualidad de las Escrituras de estar totalmente libres de error, falsedad o contradicción."
+          },
+          {
+            "word": "JESUS",
+            "clue": "Figura histórica central autodeclarada como el camino, la verdad y la vida eterna para el hombre."
+          },
+          {
+            "word": "JUAN",
+            "clue": "Evangelista que organizó temáticamente la purificación del templo para resaltar la identidad de Cristo."
+          },
+          {
+            "word": "LUMBRERAS",
+            "clue": "Astros creados en el cuarto día para separar las estaciones e iluminar la tierra habitada."
+          },
+          {
+            "word": "PABLO",
+            "clue": "Apóstol que afirmó la veracidad de la muerte, sepultura y resurrección de Cristo según las Escrituras."
+          },
+          {
+            "word": "PRACTICA",
+            "clue": "Dimensión de la vida cristiana que abarca la ética y conducta regidas por la Palabra de Dios."
+          },
+          {
+            "word": "SISTEMA",
+            "clue": "Conjunto coordinado de elementos donde el fallo de una parte afecta la totalidad del conjunto."
+          },
+          {
+            "word": "TEMPLO",
+            "clue": "Recinto sagrado purificado por Jesús para señalar la sustitución del antiguo culto sacrificial."
+          },
+          {
+            "word": "TRADICION",
+            "clue": "Costumbre o enseñanza humana que no posee la autoridad divinamente garantizada de la Biblia."
+          },
+          {
+            "word": "VERACIDAD",
+            "clue": "Calidad de verdad absoluta presente en cada afirmación histórica, geográfica y teológica bíblica."
+          },
+          {
+            "word": "VITALIDAD",
+            "clue": "Estado de salud y funcionamiento armónico que conserva el sistema doctrinal de la Palabra de Dios."
+          }
+        ]
+      }
+    },
+    {
+      "orden": 3,
+      "tipo": "libro_biblico",
+      "resena": [
+        "El Evangelio de Mateo presenta a Jesucristo como el Mesías prometido, el descendiente de David y el cumplimiento de las promesas que Dios había dado a Israel. Aunque la tradición cristiana atribuye este Evangelio a Mateo, uno de los doce apóstoles, el texto no identifica explícitamente a su autor. Fue escrito para mostrar quién es Jesús, explicar el significado de su ministerio y enseñar a sus lectores a comprender su vida y sus palabras a la luz de las Escrituras.",
+        "Desde el comienzo, Mateo relaciona la historia de Jesús con la historia del pueblo de Israel. La genealogía presenta a Jesús como descendiente de Abraham y de David, conectándolo con las promesas de bendición para las naciones y con la esperanza de un rey de la línea de David. El nacimiento de Jesús, la visita de los sabios de Oriente, la huida a Egipto y el regreso a Israel muestran que su llegada se desarrolla dentro del propósito de Dios anunciado por los profetas. A lo largo del Evangelio, Mateo señala repetidamente cómo distintos acontecimientos de la vida de Jesús corresponden a lo anunciado en las Escrituras.",
+        "El ministerio de Jesús se desarrolla principalmente en Galilea y culmina en Jerusalén. Mateo presenta sus enseñanzas mediante grandes discursos, entre ellos el Sermón del Monte, donde Jesús explica las características de la vida que agrada a Dios. También relata sus milagros, sus encuentros con distintas personas y sus enseñanzas acerca del reino de los cielos. Jesús no solo anuncia ese reino, sino que demuestra su autoridad sobre las enfermedades, las fuerzas de la naturaleza y los espíritus malignos. Sus parábolas ayudan a comprender la naturaleza del reino, mientras que sus confrontaciones con algunos dirigentes religiosos revelan diferencias profundas acerca de la interpretación y la práctica de la voluntad de Dios.",
+        "Un tema importante del Evangelio es la identidad de Jesús. Pedro lo reconoce como el Cristo, el Hijo del Dios viviente, pero los discípulos deben aprender progresivamente que su misión incluye el sufrimiento, la muerte y la resurrección. Jesús corrige la idea de que la grandeza consiste en dominar o recibir reconocimiento, y enseña que servir, perdonar y cuidar de los demás son características de quienes pertenecen a su reino. La entrada en Jerusalén, los conflictos con las autoridades, la última cena, la crucifixión y la resurrección conducen la narración hacia su culminación.",
+        "La muerte y resurrección de Jesús ocupan un lugar decisivo en la historia de la salvación. El Mesías no establece su reino mediante el poder político que muchos podían esperar, sino que entrega su vida y vence a la muerte. Después de resucitar, encomienda a sus discípulos una misión que supera las fronteras de Israel: hacer discípulos de todas las naciones, bautizarlos y enseñarles a obedecer todo lo que él ha mandado. Así, el Evangelio termina mostrando que el propósito de Dios alcanza a los pueblos y que los seguidores de Jesús participan en la proclamación de su mensaje.",
+        "Mateo también destaca la responsabilidad de vivir de acuerdo con las enseñanzas de Cristo. La fe no se limita a reconocer su identidad, sino que se expresa en la obediencia, la misericordia, la justicia, el perdón y el servicio. Sus discípulos son llamados a reflejar los valores del reino en su conducta y en sus relaciones con los demás.",
+        "En conjunto, el Evangelio de Mateo presenta a Jesús como el cumplimiento de las promesas de Dios y como el Rey cuya autoridad transforma la vida de quienes lo siguen. La historia de Israel encuentra en él un punto decisivo, y la misión iniciada entre su pueblo se extiende a todas las naciones. El libro conecta las promesas antiguas con la obra de Cristo y concluye con un llamado a formar discípulos que aprendan y practiquen sus enseñanzas."
+      ],
+      "crucigrama": {
+        "tema": "EVANGELIO DE MATEO",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "ABRAHAM",
+            "clue": "Patriarca con quien la genealogía conecta a Jesús para mostrarlo como heredero de la promesa de bendición."
+          },
+          {
+            "word": "AUTORIDAD",
+            "clue": "Facultad demostrada por Cristo sobre enfermedades, fuerzas de la naturaleza y espíritus malignos."
+          },
+          {
+            "word": "CRISTO",
+            "clue": "Título mesiánico que Pedro reconoce en Jesús al afirmar su identidad como Hijo del Dios viviente."
+          },
+          {
+            "word": "DAVID",
+            "clue": "Rey de cuya línea descendiente proviene el Mesías prometido para cumplir las promesas dadas a Israel."
+          },
+          {
+            "word": "DISCIPLINA",
+            "clue": "Mandato de enseñar a todas las naciones a obedecer lo que el Señor ha encomendado."
+          },
+          {
+            "word": "DISCURSOS",
+            "clue": "Enseñas extensas en Mateo, como el Sermón del Monte, para explicar la vida en el reino."
+          },
+          {
+            "word": "EGIPTO",
+            "clue": "Lugar al que huyó la familia de Jesús para protegerlo, cumpliendo lo anunciado por los profetas."
+          },
+          {
+            "word": "EVANGELIO",
+            "clue": "Texto que presenta a Jesucristo como el Mesías prometido y cumplimiento de las Escrituras."
+          },
+          {
+            "word": "GALILEA",
+            "clue": "Región donde Jesús desarrolla principalmente la primera etapa de su ministerio terrenal."
+          },
+          {
+            "word": "ISRAEL",
+            "clue": "Pueblo receptor inicial de las promesas divinas cuya historia encuentra un punto decisivo en Jesús."
+          },
+          {
+            "word": "JERUSALEM",
+            "clue": "Ciudad hacia la cual culmina la misión de Jesús para enfrentar su crucifixión y resurrección."
+          },
+          {
+            "word": "JUSTICIA",
+            "clue": "Valor del reino de Dios que debe manifestarse en la conducta y relaciones de sus seguidores."
+          },
+          {
+            "word": "MATEO",
+            "clue": "Apóstol a quien la tradición atribuye la autoría del relato sobre la vida y palabras de Jesús."
+          },
+          {
+            "word": "MISERICORDIA",
+            "clue": "Virtud exigida a los discípulos para reflejar los verdaderos valores del reino en su vida cotidiana."
+          },
+          {
+            "word": "MISION",
+            "clue": "Encomienda dada a los discípulos para hacer seguidores en todas las naciones bautizándolos y enseñándoles."
+          },
+          {
+            "word": "NACIONES",
+            "clue": "Pueblos de la tierra que reciben la bendición y a quienes se extiende el mensaje del Evangelio."
+          },
+          {
+            "word": "PARABOLAS",
+            "clue": "Relatos utilizados por Jesús para ilustrar la naturaleza y dinámicas del reino de los cielos."
+          },
+          {
+            "word": "PEDRO",
+            "clue": "Apóstol que reconoce a Jesús como el Cristo y el Hijo del Dios viviente."
+          },
+          {
+            "word": "RESURRECCION",
+            "clue": "Acontecimiento decisivo en el cual Cristo vence a la muerte y reafirma su autoridad suprema."
+          },
+          {
+            "word": "SERMON",
+            "clue": "Enseñanza impartida en el monte donde se exponen las características de la vida que agrada a Dios."
+          }
+        ]
+      }
+    },
+    {
+      "orden": 4,
+      "tipo": "vocabulario",
+      "resena": [
+        "La perseverancia es la capacidad de mantener el esfuerzo y continuar trabajando por un propósito a pesar de las dificultades, los retrasos o los obstáculos que puedan aparecer. Una persona perseverante no abandona fácilmente aquello que considera valioso, sino que procura avanzar incluso cuando los resultados no llegan con la rapidez esperada. En la vida cotidiana, la perseverancia se manifiesta en acciones tan diversas como aprender una habilidad, completar una formación, superar una dificultad o desarrollar un proyecto. Muchas metas importantes requieren tiempo, práctica y esfuerzo sostenido. En estos casos, el entusiasmo inicial puede no ser suficiente; es necesario mantener la disposición de continuar cuando la novedad desaparece y el progreso parece lento. La perseverancia no significa repetir una acción de manera automática ni insistir en cualquier camino sin considerar sus resultados. Una persona puede mantenerse firme en su propósito y, al mismo tiempo, modificar sus métodos, corregir sus errores o buscar nuevas alternativas. De hecho, reconocer que una estrategia no funciona puede ser parte del proceso que permite alcanzar una meta. La perseverancia bien orientada combina continuidad con capacidad de aprendizaje. Aunque suelen utilizarse como términos cercanos, perseverancia, constancia, paciencia y tenacidad presentan matices diferentes. La constancia destaca la regularidad con que se realiza una actividad; la paciencia permite soportar la espera sin precipitarse; la tenacidad expresa firmeza ante la oposición; y la perseverancia pone el énfasis en continuar a lo largo del tiempo a pesar de las dificultades. Estas cualidades pueden complementarse, pero no describen exactamente la misma disposición. En la educación, la perseverancia es importante porque el aprendizaje no siempre ocurre de manera inmediata. Comprender un tema complejo, dominar una técnica o desarrollar una capacidad requiere práctica, revisión y disposición para aprender de los errores. Quien persevera no interpreta cada equivocación como una prueba de incapacidad, sino como una oportunidad para identificar qué necesita mejorar. Esta actitud favorece la autonomía y fortalece la confianza que nace del progreso real. En el trabajo y en los proyectos personales, la perseverancia ayuda a sostener los esfuerzos necesarios para alcanzar resultados que requieren tiempo. Sin embargo, perseverar no equivale a trabajar sin descanso ni a ignorar las limitaciones. También es necesario reconocer cuándo conviene detenerse, descansar, reorganizar los recursos o reconsiderar una meta. La perseverancia no elimina la necesidad del juicio; se beneficia de él. En las relaciones humanas, esta cualidad puede observarse en la disposición para resolver dificultades, cumplir compromisos y mantener el esfuerzo necesario para construir vínculos duraderos. La convivencia no siempre es sencilla y algunas diferencias requieren diálogo, tiempo y voluntad de encontrar soluciones. No obstante, perseverar en una relación tampoco significa tolerar indefinidamente situaciones perjudiciales. La firmeza debe acompañarse de discernimiento para distinguir entre una dificultad que puede superarse y una situación que exige cambios importantes. La perseverancia también se relaciona con la motivación y la disciplina. La motivación impulsa a comenzar o continuar una actividad; la disciplina ayuda a establecer hábitos y cumplir tareas incluso cuando el entusiasmo disminuye. La perseverancia permite sostener ese esfuerzo durante el tiempo necesario para avanzar hacia un objetivo. Cuando estas cualidades trabajan juntas, una intención puede convertirse progresivamente en un resultado concreto. En las Escrituras, la perseverancia aparece vinculada con la firmeza ante las pruebas y la continuidad en la conducta. Santiago 1:2-4 relaciona las pruebas de la fe con la paciencia o perseverancia, según la traducción, y con un proceso de maduración. Romanos 5:3-4 presenta una secuencia en la que la tribulación produce perseverancia, esta fortalece el carácter y el carácter se relaciona con la esperanza. En ambos pasajes, la idea no es simplemente soportar una dificultad, sino continuar a través de ella dentro de un proceso de formación. En el mismo sentido, Hebreos 12:1 utiliza la imagen de una carrera que debe correrse con perseverancia. La figura destaca la continuidad del esfuerzo y la necesidad de no abandonar antes de completar el recorrido. Por su parte, Gálatas 6:9 anima a no cansarse de hacer el bien, señalando que existe una relación entre la continuidad de la acción y el momento oportuno para recoger sus frutos. Así, la perseverancia es más que la resistencia ante una dificultad momentánea: es la disposición de sostener un esfuerzo significativo a lo largo del tiempo, aprender durante el proceso y continuar avanzando con un propósito definido. Comprender esta palabra permite reconocer la diferencia entre comenzar con entusiasmo y mantener una acción con firmeza, paciencia y buen juicio hasta alcanzar un resultado o determinar, razonablemente, que es necesario cambiar de rumbo."
+      ],
+      "crucigrama": {
+        "tema": "PERSEVERANCIA",
+        "rows": 20,
+        "cols": 20,
+        "max_attempts": 300,
+        "words": [
+          {
+            "word": "ACCION",
+            "clue": "Ejercicio o conducta realizada de forma consciente para avanzar hacia un resultado determinado."
+          },
+          {
+            "word": "AUTONOMIA",
+            "clue": "Disposición y capacidad que se favorece en la educación al aprender a superar las propias equivocaciones."
+          },
+          {
+            "word": "CARACTER",
+            "clue": "Cualidad moral que, según Romanos, se ve fortalecida mediante la experiencia de la perseverancia."
+          },
+          {
+            "word": "CONSTANCIA",
+            "clue": "Cualidad cercana a la perseverancia que destaca la regularidad constante con la que se realiza una actividad."
+          },
+          {
+            "word": "DISCIPLINA",
+            "clue": "Hábito que ayuda a cumplir tareas y establecer rutinas aun cuando la motivación inicial disminuye."
+          },
+          {
+            "word": "DISCERNIMIENTO",
+            "clue": "Capacidad para distinguir entre una dificultad superable y una situación que exige cambios importantes."
+          },
+          {
+            "word": "EDUCACION",
+            "clue": "Ámbito donde la perseverancia es clave porque el aprendizaje requiere práctica y revisión de errores."
+          },
+          {
+            "word": "ESCRITURAS",
+            "clue": "Textos sagrados donde la perseverancia se vincula con la firmeza ante las pruebas y la madurez espiritual."
+          },
+          {
+            "word": "ESFUERZO",
+            "clue": "Capacidad de trabajo sostenido que se debe mantener para alcanzar un propósito valioso."
+          },
+          {
+            "word": "GALATAS",
+            "clue": "Carta paulina que anima a los creyentes a no cansarse de hacer el bien para cosechar a su tiempo."
+          },
+          {
+            "word": "HEBREOS",
+            "clue": "Libro que utiliza la metáfora de una carrera que debe correrse con perseverancia hasta completar el recorrido."
+          },
+          {
+            "word": "MOTIVACION",
+            "clue": "Impulso inicial que orienta hacia una actividad pero que requiere de la disciplina para sostenerse."
+          },
+          {
+            "word": "PACIENCIA",
+            "clue": "Disposición para soportar la espera sin precipitarse ante la lentitud en los resultados."
+          },
+          {
+            "word": "PERSEVERANCIA",
+            "clue": "Capacidad de mantener el esfuerzo a lo largo del tiempo a pesar de los obstáculos o retrasos."
+          },
+          {
+            "word": "PROPOSITO",
+            "clue": "Finalidad o meta valiosa que orienta la acción y da sentido a la firmeza del esfuerzo."
+          },
+          {
+            "word": "ROMANOS",
+            "clue": "Epístola que describe la secuencia donde la tribulación produce perseverancia y esta fortalece el carácter."
+          },
+          {
+            "word": "SANTIAGO",
+            "clue": "Autor que relaciona las pruebas de la fe con la paciencia y un proceso de maduración espiritual."
+          },
+          {
+            "word": "TENACIDAD",
+            "clue": "Firmes actitudes ante la oposición activa que complementan la capacidad de perseverar."
+          },
+          {
+            "word": "TRIBULACION",
+            "clue": "Dificultad o prueba que, según las cartas paulinas, produce y desarrolla la perseverancia."
+          },
+          {
+            "word": "VINCULOS",
+            "clue": "Relaciones humanas duraderas que requieren diálogo, tiempo y esfuerzo continuo para construirse."
+          }
+        ]
+      }
+    },
+    {
+      "orden": 5,
+      "tipo": "boletin",
+      "titulo": "Actividades de la Semana",
+      "introduccion": "",
+      "actividades": [
+        {
+          "titulo": "Culto de oración (Martes)",
+          "fecha": "2026-10-20",
+          "hora": "5:00 PM",
+          "descripcion": "",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Sociedad de Damas (Jueves)",
+          "fecha": "2026-10-22",
+          "hora": "3:30 PM",
+          "descripcion": "Hogar de la hermana María Sanabria",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Celula 24 de Julio (Jueves)",
+          "fecha": "2026-10-22",
+          "hora": "6:00 PM",
+          "descripcion": "Hogar de la hermana Evelin Castro",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Bucadores de la Verdad (Sabado)",
+          "fecha": "2026-10-24",
+          "hora": "1:00 PM",
+          "descripcion": "Iglesia Agua Viva y Hatos de Agua Viva",
+          "imagen": null,
+          "video": null
+        },
+        {
+          "titulo": "Escuela Bíblica Dominical",
+          "fecha": "2026-10-25",
+          "hora": "8:00 PM",
+          "descripcion": "Iglesia Agua Viva y Hatos de Agua Viva.",
+          "imagen": null,
+          "video": null
+        }
+      ]
+    }
+  ]
+}
